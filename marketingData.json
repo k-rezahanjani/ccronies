@@ -1,0 +1,39 @@
+{
+    "marketing": [
+        {
+            "id": 1,
+            "name": "branding design",
+            "image": "/images/digital/branding.png"
+        },
+        {
+            "id": 2,
+            "name": "logo design",
+            "image": "/images/digital/logo-design.png"
+        },
+        {
+            "id": 3,
+            "name": "video & motion graphic",
+            "image": "/images/digital/video.png"
+        },
+        {
+            "id": 4,
+            "name": "illustration",
+            "image": "/images/digital/illustration.png"
+        },
+        {
+            "id": 5,
+            "name": "advertising and marketing design",
+            "image": "/images/digital/ads.png"
+        },
+        {
+            "id": 6,
+            "name": "web design",
+            "image": "/images/digital/web.png"
+        },
+        {
+            "id": 7,
+            "name": "packaging design",
+            "image": "/images/digital/pack.png"
+        }
+    ]
+}
