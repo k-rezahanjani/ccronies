@@ -4,7 +4,7 @@ import { SlArrowDownCircle } from "react-icons/sl";
 
 const Hero = () => {
     return ( 
-        <div className="sm:relative h-screen flex flex-col lg:px-5 md:px-5 items-center justify-center px-32 bg-slate-950 sm:h-[37.5rem]">
+        <div className="sm:relative h-screen flex flex-col lg:px-5 md:px-5 items-center justify-center px-32 bg-[#050708] sm:h-[37.5rem]">
             <motion.div 
                 className="flex flex-col justify-center"
                 initial={{opacity: 0, scale: 1}}
