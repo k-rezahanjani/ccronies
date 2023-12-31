@@ -1,7 +1,7 @@
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import CardLogo from "./CardLogo";
 import { groq } from "next-sanity";
-import { client } from "@/sanity/lib/client";
+import { client } from "@/creative-cronies/lib/client";
 
 const Clients = () => {
 
@@ -13,8 +13,8 @@ const Clients = () => {
         setLoading(true)
         const fetchItems = async () => {
             try {
-                const imageQuery = groq`*[_type == 'logo']{name, _id, "image": uploadLogo.asset -> url}`
-                const data = await client.fetch(imageQuery);
+                const query = groq`*[_type == 'client']{name, _id, "image": clientLogo.asset -> url}`
+                const data = await client.fetch(query);
                 if(data && data.length > 0 ) {
                     setLogo(data);
                 }
@@ -37,7 +37,7 @@ const Clients = () => {
                 {error && error}
                 {loading && <h2 className="animate-bounce text-3xl">Loading...</h2>}
                 {
-                    logo.map(item => (
+                   logo && logo.map(item => (
                         <CardLogo key={item._id} image={item.image} title={item.name} />
                     ))
                 }
