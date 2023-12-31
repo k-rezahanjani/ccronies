@@ -17,7 +17,7 @@ const Header = () => {
                 animate={{x: 0, opacity: 1, scale: 1}} 
                 transition={{duration: 1.5}}
             >
-                <Image src="/logo.png" width={150} height={150} alt="logo"/>
+                <Image src="/images/logos/logo.png" width={150} height={150} alt="logo"/>
             </motion.div>
             <motion.div 
                 className="flex flex-row space-x-3 items-center justify-center text-center overflow-hidden md:hidden"

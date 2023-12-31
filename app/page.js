@@ -1,3 +1,4 @@
+"use client"
 import About from '@/components/About'
 import Clients from '@/components/Clients'
 import DigitalMarketing from '@/components/DigitalMarketing'
@@ -8,6 +9,7 @@ import Portfolio from '@/components/Portfolio'
 import Services from '@/components/Services'
 
 export default function Home() {
+
   return (
     <main>
       <section className='header'>

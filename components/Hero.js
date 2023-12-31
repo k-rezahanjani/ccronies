@@ -19,7 +19,7 @@ const Hero = () => {
                 initial={{y: 200, scale: 1, opacity: 0}}
                 animate={{y: 0, scale: 1, opacity: 1}}
                 transition={{duration: 1.4}}
-                className="flex flex-row absolute bottom-3">
+                className="flex flex-row absolute bottom-3 cursor-pointer">
                 <button>Scroll Down</button>
                 <SlArrowDownCircle size={20} color="#ffa807" className="my-auto ms-2 sm:absolute sm:bottom-0 sm:right-0 sm:left-24"/>
             </motion.div>

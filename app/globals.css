@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components {
+  .contactInput {
+    @apply outline-none bg-transparent rounded-sm border-b border-[#242424] text-gray-500 transition-all focus:text-[#F7AB0A] 
+}
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
