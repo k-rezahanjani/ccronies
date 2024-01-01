@@ -15,15 +15,15 @@ const Portfolio = () => {
                     <div className='flex justify-end items-center float-right md:flex-col-reverse md:mx-auto'>
                         <div className='flex flex-row sm:flex-col'>
                             <div className='mx-auto mr-2'>
-                                <img src="/images/rectangle.png" alt="image" className='w-60 rounded-md md:w-40' />
+                                <img src="/images/1.png" alt="portfolio1" className='w-60 rounded-md md:w-40' />
                             </div>
                         </div>
                         <div className='flex flex-col lg:flex-row'>
                             <div className='box my-1 lg:mr-2'>
-                                <img src="/images/rectangle2.png" alt="image2" className='w-60 rounded-md md:w-40' />
+                                <img src="/images/2.png" alt="portfolio2" className='w-60 rounded-md md:w-40' />
                             </div>
                             <div className='box my-1 lg:mr-2'>
-                                <img src="/images/rectangle3.png" alt="image3" className='w-60 rounded-md md:w-40' />
+                                <img src="/images/3.png" alt="portfolio3" className='w-60 rounded-md md:w-40' />
                             </div>
                         </div>
                     </div>
