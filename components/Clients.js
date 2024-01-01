@@ -38,7 +38,7 @@ const Clients = () => {
                 {loading && <h2 className="animate-bounce text-3xl">Loading...</h2>}
                 {
                    logo && logo.map(item => (
-                        <CardLogo key={item._id} image={item.image} title={item.name} />
+                        <CardLogo key={item._id} image={item.image} name={item.name} title={item.name}/>
                     ))
                 }
             </div>
