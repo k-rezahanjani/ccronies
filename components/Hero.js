@@ -4,7 +4,9 @@ import { SlArrowDownCircle } from "react-icons/sl";
 
 const Hero = () => {
     return ( 
-        <div className="sm:relative h-screen flex flex-col lg:px-5 md:px-5 items-center justify-center px-32 bg-[#050708] sm:h-[37.5rem]">
+        <div 
+            className="sm:relative h-screen flex flex-col lg:px-5 md:px-5 items-center justify-center px-32 bg-[black] 
+            sm:h-[50rem] bg-hero-pattern bg-no-repeat bg-right bg-large sm:bg-small">
             <motion.div 
                 className="flex flex-col justify-center"
                 initial={{opacity: 0, scale: 1}}
@@ -19,7 +21,7 @@ const Hero = () => {
                 initial={{y: 200, scale: 1, opacity: 0}}
                 animate={{y: 0, scale: 1, opacity: 1}}
                 transition={{duration: 1.4}}
-                className="flex flex-row absolute bottom-3 cursor-pointer">
+                className="flex flex-row absolute bottom-14 cursor-pointer">
                 <button><a href="#about">Scroll Down</a></button>
                 <SlArrowDownCircle size={20} color="#ffa807" className="my-auto ms-2 sm:absolute sm:bottom-0 sm:right-0 sm:left-24"/>
             </motion.div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import marketingData from "../marketingData.json";
 
 const DigitalMarketing = () => {
@@ -7,12 +8,12 @@ const DigitalMarketing = () => {
 
     return ( 
         <div className="h-screen flex flex-col px-32 lg:px-5 md:px-5 items-center justify-center bg-[#121415] sm:py-10 lg:h-fit">
-            <div className="flex flex-wrap gap-x-10 justify-center lg:flex-col-reverse">
+            <div className="flex flex-wrap gap-x-10 justify-center lg:flex-col-reverse xl:w-[1260px]">
                 <div className="flex flex-wrap gap-[15px] mb-5">
                     {
                         firstItems && firstItems.map(item => (
                             <div className="bg-[#000] w-52 p-5 rounded-lg" key={item.id}>
-                                <img src={item.image} alt={item.name} width={70} height={70}/>
+                                <Image src={item.image} alt={item.name} width={70} height={70} className="services-img"/>
                                 <p className="capitalize mt-3 text-[#C9C9C9]">{item.name}</p>
                             </div>
                         ))
@@ -30,7 +31,7 @@ const DigitalMarketing = () => {
                     {
                         restItems.map(item => (
                             <div className="bg-[#000] w-52 p-5 rounded-lg" key={item.id}>
-                                <img src={item.image} alt={item.name} width={70} height={70}/>
+                                <Image src={item.image} alt={item.name} width={70} height={70} className="services-img"/>
                                 <p className="capitalize mt-3 text-[#C9C9C9]">{item.name}</p>
                             </div>
                         ))
