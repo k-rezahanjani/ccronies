@@ -39,7 +39,7 @@ const DigitalMarketing = () => {
                 </div>
             </div>
             <div className="flex flex-col mr-auto py-20 px-24 md:px-0">
-                <p className="text-sm text-amber-600 mb-3 capitalize">Want to start a project?</p>
+                <p className="text-sm text-[#F99D1C] mb-3 capitalize">Want to start a project?</p>
                 <h2 className="text-7xl font-extrabold leading-[90px] md:text-6xl sm:text-5xl">Let’s Talk...</h2>
             </div>
         </div>

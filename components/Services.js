@@ -4,7 +4,7 @@ const Services = () => {
     return ( 
         <div className="h-screen flex flex-col my-44 px-32 lg:px-5 md:px-5 items-center justify-center bg-[#000] sm:py-10 lg:h-fit">
             <div className="items-start flex flex-col text-center">
-                <p className="text-sm text-orange-500">That's it</p>
+                <p className="text-sm text-[#F99D1C]">That's it</p>
                 <h1 className="text-left text-7xl lg:text-4xl text-ellipsis h-28 md:overflow-hidden md:text-ellipsis capitalize">
                     best Instagram promotion offer
                 </h1>
@@ -30,7 +30,7 @@ const Services = () => {
                                     item.options.map((option, index) => (
                                         <div key={index} className='flex flex-row gap-2'>
                                             <img src={option.icons} className='py-2'/>
-                                            <p className='my-auto'>{option.text}</p>
+                                            <p className='my-auto ms-2 text-sm'>{option.text}</p>
                                         </div>
                                     ))
                                 }

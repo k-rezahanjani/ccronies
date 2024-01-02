@@ -6,8 +6,8 @@ const Portfolio = () => {
         <>
             <div className="h-screen flex justify-between lg:px-5 lg:flex-col lg:justify-center md:px-5 md:flex-col items-center px-32 sm:flex-col sm:py-10">
                 <div className="relative items-start w-1/3 max-h-64 lg:w-full md:w-full sm:w-full md:justify-center">
-                    <p className="text-sm text-orange-500 uppercase">A bit about our portfolio</p>
-                    <p className="text-justify text-lg text-ellipsis h-60">
+                    <p className="text-sm text-[#F99D1C] uppercase">A bit about our portfolio</p>
+                    <p className="text-start text-lg text-ellipsis h-60">
                     Welcome to our creative wonderland, where design dreams take flight and visual stories come to life. In our extensive portfolio, you will find a diverse collection of design projects that showcase our passion for crafting innovative, modern, and captivating visual experiences.                </p>
                     <ReadMoreButton title="more works" top="top-[500000rem]"/>
                 </div>
