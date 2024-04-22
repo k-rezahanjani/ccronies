@@ -19,7 +19,7 @@ const Hero = () => {
         initial={{ y: 200, scale: 1, opacity: 0 }}
         animate={{ y: 0, scale: 1, opacity: 1 }}
         transition={{ duration: 1.4 }}
-        className="flex flex-row absolute bottom-3 cursor-pointer xl:bottom-10"
+        className="flex items-center space-x-2 w-36 p-1 absolute bottom-3 cursor-pointer xl:bottom-10"
       >
         <button className="my-auto">
           <a href="#about">Scroll Down</a>
