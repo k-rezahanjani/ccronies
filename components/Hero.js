@@ -12,7 +12,7 @@ const Hero = () => {
         transition={{ duration: 1.5 }}
       >
         <p className="text-lg text-[#F99D1C] mb-3">Hello People!</p>
-        <h2 className="text-[4.5rem] leading-[90px] md:text-6xl sm:text-4xl font-bold">We're <br /> Creative Cronies.</h2>
+        <h2 className="text-[4.5rem] text-white leading-[90px] md:text-6xl sm:text-4xl font-bold">We're <br /> Creative Cronies.</h2>
       </motion.div>
       <div className="w-[15rem]"></div>
       <motion.div 

@@ -27,7 +27,7 @@ const Clients = () => {
     }, [])
 
     return ( 
-        <div className="flex flex-col gap-y-10">
+        <div className="flex flex-col gap-y-10 bg-[#050708]">
             <div className="text-center mx-auto w-full">
                 <h2 className="text-4xl capitalize sm:text-3xl">
                     <span className="text-gray-500">some of</span> the clients we have designed for

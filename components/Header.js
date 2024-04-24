@@ -42,7 +42,7 @@ const Header = () => {
                 animate={{opacity: 1, scale: 1}}
                 initial={{opacity: 0, scale:1}} 
                 transition={{duration: 1.5}} 
-                className="md:block text-3xl lg:hidden xl:hidden 2xl:hidden"
+                className="md:block text-3xl text-white lg:hidden xl:hidden 2xl:hidden cursor-pointer"
             >
                 <IoMdMenu name="menu"/>
             </motion.div>
