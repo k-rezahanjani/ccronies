@@ -13,7 +13,7 @@ const DigitalMarketing = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#121415] py-10 px-5">
       <div className="flex flex-wrap justify-center items-start w-full lg:justify-between lg:flex-col-reverse md:flex-col-reverse">
         {/* Top row items alongside the text */}
-        <div className="flex flex-row md:flex-wrap md:w-full justify-center md:justify-start items-center">
+        <div className="flex justify-center flex-wrap items-center md:w-full mt-0">
           {topRowItems.map((item) => (
             <div
               className="bg-[#000] w-52 h-52 p-5 m-2 flex flex-col items-center justify-center rounded-lg"
