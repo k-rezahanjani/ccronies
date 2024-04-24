@@ -21,7 +21,7 @@ const Hero = () => {
         transition={{ duration: 1.4 }}
         className="flex items-center space-x-2 w-36 p-1 absolute bottom-3 cursor-pointer xl:bottom-10"
       >
-        <button className="my-auto">
+        <button className="my-auto text-white">
           <a href="#about">Scroll Down</a>
         </button>
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none" className="mt-2 ms-1 sm:absolute sm:bottom-0 sm:right-0 sm:left-24">

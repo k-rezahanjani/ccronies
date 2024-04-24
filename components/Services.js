@@ -12,7 +12,7 @@ const Services = () => {
             <div className="flex flex-wrap justify-center gap-4 w-full">
                 {data.packages.map((item, index) => (
                     <div key={index} className={`flex flex-col p-5 rounded-md capitalize bg-opacity-90 ${index % 2 === 0 ? 'bg-[#2F3234]' : 'bg-[#5B2E91]'} min-w-[280px] max-w-[350px]`}>
-                        <div className="font-bold">{item.name}</div>
+                        <div className="font-bold text-white">{item.name}</div>
                         <div className="py-2">
                             <p className='text-white'>{item.description}</p>
                         </div>
