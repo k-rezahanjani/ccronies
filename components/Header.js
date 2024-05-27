@@ -2,9 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import {motion} from 'framer-motion';
-import { IoMdMenu } from "react-icons/io";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { useState } from "react";
+
 
 const Header = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => setIsOpen(!isOpen);
 
     return ( 
         <header className="sticky bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5">
@@ -16,7 +22,7 @@ const Header = () => {
                 <Image src="/images/logo.png" className='background-color: black' width={200} height={200} alt="logo"/>
             </motion.div>
             <motion.div 
-                className="flex flex-row space-x-3 items-center justify-center text-center overflow-hidden md:hidden"
+                className="flex flex-row space-x-3 items-center justify-center text-center text-white overflow-hidden md:hidden"
                 initial={{opacity: 0, scale: 1}} 
                 animate={{opacity: 1, scale: 1}} 
                 transition={{duration: 1.5}}
@@ -38,13 +44,24 @@ const Header = () => {
                 </Link>
                 {/* <RxHamburgerMenu name="menu" className="text-3xl text-orange-400 cursor-pointer" onClick={(e) => onToggle(e.name)}/> */}
             </motion.div>
+            {/* Menu Items when on tablet and mobile screen */}
+            {isOpen && (
+                    <div className="fixed inset-0 bg-[#008000] flex items-center justify-center">
+                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">About</button></Link>
+                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">Portfolio</button></Link>
+                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">Offers</button></Link>
+                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">Service</button></Link>
+                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">Contact</button></Link>
+                    </div>
+                )}
             <motion.div 
                 animate={{opacity: 1, scale: 1}}
                 initial={{opacity: 0, scale:1}} 
                 transition={{duration: 1.5}} 
                 className="md:block text-3xl text-white lg:hidden xl:hidden 2xl:hidden cursor-pointer"
+                onClick={toggleMenu}
             >
-                <IoMdMenu name="menu"/>
+                {isOpen ? <IoMdClose name="close"/> : <IoMdMenu name="menu"/>}
             </motion.div>
         </header>
      );

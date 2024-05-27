@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="sm:relative min-h-screen flex flex-row lg:px-5 md:px-5 place-items-center justify-center px-32 bg-black sm:h-[37.5rem]
-    bg-hero-pattern bg-no-repeat bg-right lg:bg-small xl:bg-large">
+    <div className="relative min-h-screen flex flex-row lg:px-5 md:px-5 place-items-center justify-center px-32 bg-black sm:h-[37.5rem]
+    bg-hero-pattern bg-no-repeat bg-right lg:bg-small xl:bg-large -z-10">
       <motion.div 
         className="flex flex-col w-[50rem]"
         initial={{ opacity: 0, scale: 1 }}
