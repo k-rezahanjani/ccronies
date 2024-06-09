@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@lottiefiles/react-lottie-player": "^3.5.4",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.23.4",
     "framer-motion": "^10.16.16",
