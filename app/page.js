@@ -16,7 +16,7 @@ export default function Home() {
       <section className='Header'>
         <Header />
       </section>
-      <section className='hero'>
+      <section className='hero0'>
         <Hero />
       </section>
       <section id='about' className='snap-center'>
