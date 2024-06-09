@@ -2,7 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import {motion} from 'framer-motion';
-import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { FaBars, FaTimes } from "react-icons/fa";
+
+
 import { useState } from "react";
 
 
@@ -45,24 +47,13 @@ const Header = () => {
                 {/* <RxHamburgerMenu name="menu" className="text-3xl text-orange-400 cursor-pointer" onClick={(e) => onToggle(e.name)}/> */}
             </motion.div>
             {/* Menu Items when on tablet and mobile screen */}
-            {isOpen && (
-                    <div className="fixed inset-0 bg-[#008000] flex items-center justify-center">
-                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">About</button></Link>
-                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">Portfolio</button></Link>
-                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">Offers</button></Link>
-                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">Service</button></Link>
-                        <Link href="#"><button className="text-white text-xl hover:text-[#F99D1C] m-5">Contact</button></Link>
-                    </div>
-                )}
-            <motion.div 
-                animate={{opacity: 1, scale: 1}}
-                initial={{opacity: 0, scale:1}} 
-                transition={{duration: 1.5}} 
-                className="md:block text-3xl text-white lg:hidden xl:hidden 2xl:hidden cursor-pointer"
-                onClick={toggleMenu}
-            >
-                {isOpen ? <IoMdClose name="close"/> : <IoMdMenu name="menu"/>}
-            </motion.div>
+            <div className="hidden md:flex">
+                {
+                    <button onClick={toggleMenu} className="text-white text-2xl">
+                        {isOpen ? <FaTimes /> : <FaBars />}
+                    </button>
+                }
+            </div>
         </header>
      );
 }

@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className='header'>
+      <section className='Header'>
         <Header />
       </section>
       <section className='hero'>
