@@ -1,15 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
-import Lottie from "lottie-react";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import LottieData from "../app/lottie/data.json";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+// const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const style = {
   height: 550,
 };
+
 
 const Hero = () => {
 
@@ -39,7 +40,15 @@ const Hero = () => {
         {
           isClient &&
           <div className="absolute right-0 top-0 -z-100">
-            <Lottie animationData={LottieData} loop={true} style={style}></Lottie>
+            {/* <Lottie animationData={LottieData} loop={true} style={style}></Lottie> */}
+            <Player
+              autoplay
+              loop
+              src="https://lottie.host/7b111bb0-ed19-4c3c-ae62-db496ac12d0d/e8nW7kbjfr.json"
+              style={style}
+            >
+              <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+            </Player>
           </div>
         }
       </div>
