@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-// import Lottie from "lottie-react";
+import Lottie from "lottie-react";
 import LottieData from "../app/lottie/data.json";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
