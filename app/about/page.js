@@ -1,8 +1,8 @@
 "use client"
 import { motion } from 'framer-motion'
-import ReadMoreButton from "./ReadMoreButton";
+// import ReadMoreButton from "./ReadMoreButton";
 
-export default function About() {
+export default function Page() {
 
     return ( 
         <div className="min-h-screen flex px-32 lg:px-5 md:px-5 items-center justify-between bg-[#121415] lg:flex-col-reverse md:flex-col-reverse sm:flex-col-reverse sm:py-10 -z-10">
@@ -12,7 +12,7 @@ export default function About() {
                 where boundless creativity and design expertise come together to craft innovative visual solutions.<br/>
                 As a dynamic duo of graphic designers with a passion for artistic collaboration, we pride ourselves on delivering captivating designs that elevate brands and mesmerize audiences.
                 </p>
-                <ReadMoreButton title="read more"/>
+                {/* <ReadMoreButton title="read more"/> */}
             </div>
             <div className="items-end flex">
                 <motion.img 

@@ -3,8 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {motion} from 'framer-motion';
 import { FaBars, FaTimes } from "react-icons/fa";
-
-
 import { useState } from "react";
 
 
@@ -13,9 +11,8 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
-
     return ( 
-        <header className="sticky bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5">
+        <header className="bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5">
             <motion.div
                 initial={{x: -500, opacity: 0, scale: 1}} 
                 animate={{x: 0, opacity: 1, scale: 1}} 
@@ -29,7 +26,7 @@ const Header = () => {
                 animate={{opacity: 1, scale: 1}} 
                 transition={{duration: 1.5}}
             >
-                <Link href="#">
+                <Link href="/about">
                     <button className="capitalize hover:text-[#F99D1C]">about</button>
                 </Link>
                 <Link href="#" >

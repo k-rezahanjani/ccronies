@@ -12,6 +12,16 @@ const DigitalMarketing = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#121415] py-10 px-5">
       <div className="flex flex-wrap justify-center items-start w-full lg:justify-between lg:flex-col-reverse md:flex-col-reverse">
+        {/* Text */}
+        <div className="max-w-2xl lg:w-1/2 px-10 md:w-full">
+            <h2 className="text-3xl text-[#F99D1C] capitalize mb-4">Graphic Design Services</h2>
+            <p className="text-[#C9C9C9] leading-6">
+              With a focus on modern aesthetics, minimalism, and cutting-edge design techniques, our
+              services cover a wide spectrum of design realms. From crafting iconic logos and brand
+              visual identities to developing engaging motion graphics and user-friendly websites, we
+              take pride in delivering design solutions that leave a lasting impression.
+            </p>
+          </div>
         {/* Top row items alongside the text */}
         <div className="flex justify-center flex-wrap items-center md:w-full mt-0">
           {topRowItems.map((item) => (
@@ -23,16 +33,6 @@ const DigitalMarketing = () => {
               <p className="text-[#C9C9C9] mt-3 capitalize">{item.name}</p>
             </div>
           ))}
-        </div>
-        {/* Text */}
-        <div className="max-w-2xl lg:w-1/2 px-10 md:w-full">
-          <h2 className="text-3xl text-white capitalize mb-4">Graphic Design Services</h2>
-          <p className="text-[#C9C9C9]">
-            With a focus on modern aesthetics, minimalism, and cutting-edge design techniques, our
-            services cover a wide spectrum of design realms. From crafting iconic logos and brand
-            visual identities to developing engaging motion graphics and user-friendly websites, we
-            take pride in delivering design solutions that leave a lasting impression.
-          </p>
         </div>
       </div>
 
