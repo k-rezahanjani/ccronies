@@ -12,7 +12,7 @@ const Header = () => {
 
     const toggleMenu = () => setIsOpen(!isOpen);
     return ( 
-        <header className="bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5">
+        <header className="bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5 h-24">
             <motion.div
                 initial={{x: -500, opacity: 0, scale: 1}} 
                 animate={{x: 0, opacity: 1, scale: 1}} 

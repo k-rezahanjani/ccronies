@@ -35,9 +35,9 @@ export default function Home() {
       <section className='digital-marketing'>
         <DigitalMarketing />
       </section>
-      <section className='footer'>
+      {/* <section className='footer'>
         <Footer />
-      </section>
+      </section> */}
     </main>
   )
 }
