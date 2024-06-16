@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ image, name, title }) => {
+const Card = ({ image, name, title, description }) => {
     return ( 
         <div className="flex flex-row justify-between gap-4">
             {/* Card 1 */}
@@ -11,10 +11,7 @@ const Card = ({ image, name, title }) => {
                 <div className="flex flex-col w-2/3 p-4">
                     <h3 className="text-white font-bold text-xl">{name}</h3>
                     <h4 className="text-[#F99D1C] text-lg mb-2">{title}</h4>
-                    <p className="text-wrap text-white text-sm">
-                    Hi, I'm a creative advertising designer with a demonstrated history of working in digital marketing.
-                    Skilled in Design, Motion Graphics, Branding, and Print. I've got a master's degree from the University of Science and Culture.
-                    </p>
+                    <p className="text-wrap text-white text-sm">{description}</p>
                 </div>
             </div>
             {/* Card 2 */}
