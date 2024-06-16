@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 const Card = ({ image, name, title, description }) => {
-    return ( 
+    return (
         <div className="flex flex-row w-1/2 bg-[#5F2F8E] p-2 overflow-hidden">
-            <div className="w-1/3">
-                <img src={image} alt={name} className="object-cover h-full w-full" />
+            <div className="w-1/3 relative">
+                <Image src={image} alt={name} layout="fill" objectFit="cover" />
             </div>
             <div className="flex flex-col w-2/3 p-4">
                 <h3 className="text-white font-bold text-xl">{name}</h3>
@@ -12,8 +13,7 @@ const Card = ({ image, name, title, description }) => {
                 <p className="text-wrap text-white text-sm">{description}</p>
             </div>
         </div>
-     );
+    );
 }
- 
-export default Card;
 
+export default Card;

@@ -1,16 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
-import LottieData from "../app/lottie/data.json";
-// import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-
-// const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const style = {
   height: 550,
 };
-
 
 const Hero = () => {
 
@@ -40,7 +35,6 @@ const Hero = () => {
         {
           isClient &&
           <div className="absolute right-0 top-0 -z-100">
-            {/* <Lottie animationData={LottieData} loop={true} style={style}></Lottie> */}
             <Player
               autoplay
               loop
@@ -61,7 +55,7 @@ const Hero = () => {
           transition={{ duration: 1.4 }}
           className="flex items-center space-x-2 w-36 p-1 cursor-pointer"
         >
-          <button className="my-auto text-white">
+          <button className="my-auto text-white cursor-pointer">
             <a href="#about">Scroll Down</a>
           </button>
           <svg

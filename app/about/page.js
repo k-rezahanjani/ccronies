@@ -13,7 +13,7 @@ const Page = () => {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const query = groq`*[_type == 'founders']{name, _id, title, "image": founders.asset->url, description}`;
+        const query = groq`*[_type == 'founders']{name, _id, title, "imageUrl": image.asset->url, description}`;
         const data = await client.fetch(query);
         if (data && data.length > 0) {
           setData(data);
@@ -54,7 +54,7 @@ const Page = () => {
         <div className="flex flex-row justify-between gap-4">
             {loading && <h2 className="animate-bounce text-3xl">Loading...</h2>}
             {data && data.map((item) => (
-                <Card key={item._id} image={item.image} name={item.name} title={item.title}/>
+                <Card key={item._id} image={item.imageUrl} name={item.name} title={item.title} description={item.description}/>
             ))}
         </div>
       </div>

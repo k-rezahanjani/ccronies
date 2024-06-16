@@ -13,9 +13,6 @@ export default function Home() {
 
   return (
     <main>
-      {/* <section className='Header'>
-        <Header />
-      </section> */}
       <section className='hero'>
         <Hero />
       </section>
@@ -25,19 +22,10 @@ export default function Home() {
       <section className='portfolio'>
         <Portfolio />
       </section>
-      {/* <section className='clients'>
-        <Clients/>
-      </section> */}
-      {/* <section className='services'>
-        <Services />
-      </section> */}
       <ScrollTop />
       <section className='digital-marketing'>
         <DigitalMarketing />
       </section>
-      {/* <section className='footer'>
-        <Footer />
-      </section> */}
     </main>
   )
 }
