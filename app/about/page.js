@@ -31,7 +31,7 @@ const Page = () => {
           {/* Card 1 */}
           <div className="flex flex-row w-1/2 bg-[#5F2F8E] p-2 overflow-hidden">
             <div className="w-1/3">
-              <img src="/images/founders/saba.png" alt="Saba Ebrahimi" className="object-cover h-full w-full" />
+              <img src="/images/saba.png" alt="Saba Ebrahimi" className="object-cover h-full w-full" />
             </div>
             <div className="flex flex-col w-2/3 p-4">
               <h3 className="text-white font-bold text-xl">Saba Ebrahimi</h3>
@@ -45,7 +45,7 @@ const Page = () => {
           {/* Card 2 */}
           <div className="flex flex-row w-1/2 bg-[#5F2F8E] p-2 overflow-hidden">
             <div className="w-1/3">
-              <img src="/images/founders/tara.png" alt="Tara Nabatian" className="object-cover h-full w-full" />
+              <img src="/images/tara.png" alt="Tara Nabatian" className="object-cover h-full w-full" />
             </div>
             <div className="flex flex-col w-2/3 p-4">
               <h4 className="text-white font-bold text-xl">Tara Nabatian</h4>
