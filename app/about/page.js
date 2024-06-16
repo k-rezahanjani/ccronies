@@ -14,7 +14,7 @@ const Page = () => {
         setLoading(true)
         const fetchItems = async () => {
             try {
-                const query = groq`*[_type == 'founders']{name, _id, title, "image": clientLogo.asset -> url, description}`
+                const query = groq`*[_type == 'founders']{name, _id, title, "image": founders.asset -> url, description}`
                 const data = await client.fetch(query);
                 if(data && data.length > 0 ) {
                     setData(data);
