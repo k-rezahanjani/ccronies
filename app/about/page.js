@@ -1,8 +1,31 @@
 "use client";
 import Card from "@/components/Card";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Page = () => {
+
+    const [data, setData] = useState([]);
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        setLoading(true)
+        const fetchItems = async () => {
+            try {
+                const query = groq`*[_type == 'founders']{name, _id, title, "image": clientLogo.asset -> url, description}`
+                const data = await client.fetch(query);
+                if(data && data.length > 0 ) {
+                    setData(data);
+                }
+                setLoading(false)
+            } catch (error) {
+                alert("There is an error due to ", setError(error));
+            }
+        }
+        fetchItems()
+    }, [])
   return (
     <div className="min-h-screen bg-black flex flex-col">
       {/* Hero section */}
@@ -26,7 +49,12 @@ const Page = () => {
           <br />
           Creative Cronies Founders.
         </p>
-        <Card />
+        {
+            data && data.map(item => (
+                <Card key={item._id} image={item.image} name={item.name} title={item.title} description={item.description}/>
+            ))
+        }
+        
       </div>
       {/* What do we do */}
       <div className="flex flex-wrap w-full justify-between my-20">
