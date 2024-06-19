@@ -1,0 +1,79 @@
+{
+    "packages": [
+      {
+        "plan": "Silver",
+        "price": "25,500,000",
+        "timeline": "Timeline: 15 work days",
+        "features": [
+          "10 Designed Instagram posts",
+          "20 Designed Instagram stories",
+          "4 Motion design",
+          "Slide posts",
+          "Graphic & videos in up to 4K"
+        ]
+      },
+      {
+        "plan": "Diamond",
+        "price": "40,000,000",
+        "timeline": "Timeline: 30 work days",
+        "features": [
+          "20 Designed Instagram posts",
+          "40 Designed Instagram stories",
+          "4 Motion design",
+          "Slide posts included",
+          "Graphic & videos in up to 4K"
+        ]
+    },
+    {
+      "plan": "Gold",
+      "price": "52,500,000",
+      "timeline": "Timeline: 30 work days",
+      "features": [
+        "30 Designed Instagram posts",
+        "60 Designed Instagram stories",
+        "6 Motion design",
+        "Slide posts included",
+        "Graphic & videos in up to 4K"
+      ]
+    }
+  ],
+
+  "packages2": [
+      {
+        "plan": "Silver",
+        "price": "45,500,000",
+        "timeline": "Timeline: 15 work days",
+        "features": [
+          "10 Designed Instagram posts",
+          "20 Designed Instagram stories",
+          "4 Motion design",
+          "Slide posts",
+          "Graphic & videos in up to 4K"
+        ]
+      },
+      {
+        "plan": "Diamond",
+        "price": "58,000,000",
+        "timeline": "Timeline: 30 work days",
+        "features": [
+          "20 Designed Instagram posts",
+          "40 Designed Instagram stories",
+          "4 Motion design",
+          "Slide posts included",
+          "Graphic & videos in up to 4K"
+        ]
+    },
+    {
+      "plan": "Gold",
+      "price": "78,500,000",
+      "timeline": "Timeline: 30 work days",
+      "features": [
+        "30 Designed Instagram posts",
+        "60 Designed Instagram stories",
+        "6 Motion design",
+        "Slide posts included",
+        "Graphic & videos in up to 4K"
+      ]
+    }
+  ]
+}

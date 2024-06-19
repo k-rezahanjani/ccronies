@@ -1,0 +1,29 @@
+{
+    "portfolio": [
+        {
+            "title": "Logo Design",
+            "description": "We create distinctive and memorable logos that embody your brand’s essence and values.",
+            "image": "/images/portfolio/logo.png" 
+        },
+        {
+            "title": "Branding Design",
+            "description": "Developing a cohesive visual identity, including logo, color palette, typography, and brand guidelines, ensuring consistency across all touchpoints.",
+            "image": "/images/portfolio/branding.png" 
+        },
+        {
+            "title": "Packaging Design",
+            "description": "Packaging is often your first brand impression. We create packaging designs that not only protect your product but also tell your brand story, incorporating elements like color, shape, and materials to ensure your brand personality and values.",
+            "image": "/images/portfolio/packaging.png" 
+        },
+        {
+            "title": "Social Media Design",
+            "description": "Engage your audience on social media with eye-catching graphics. Our designs ensure your brand stands out in every post, story, and ad.",
+            "image": "/images/portfolio/social.png" 
+        },
+        {
+            "title": "Web / App Design",
+            "description": "Our team designs visually appealing and user-friendly websites and apps. We focus on creating digital experiences that engage users and enhance your digital presence.",
+            "image": "/images/portfolio/web.png" 
+        }
+    ]
+}

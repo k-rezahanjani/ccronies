@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import starUrl from '@/public/images/arrowRight.svg?url';
 

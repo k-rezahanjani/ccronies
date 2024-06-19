@@ -1,10 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { PortableText } from "@portabletext/react";
-import Card from "@/components/Card";
+// import Card from "@/components/Card";
 import { client } from "@/creative-cronies/lib/client";
 import { groq } from "next-sanity";
+import FoundersList from "@/components/FoundersList";
+
+const Card = React.lazy(() => import('@/components/Card'));
 
 const Page = () => {
   const [data, setData] = useState([]);
@@ -32,7 +34,7 @@ const Page = () => {
     <div className="min-h-screen bg-black flex flex-wrap">
       {/* Hero section */}
       <div className="flex w-full justify-between">
-        <div className="w-full sm:px-8 ps-32 flex items-center lg:px-6 md:px-6 md:py-12 bg-black">
+        <div className="w-full sm:px-8 ps-32 py-40 flex items-center lg:px-6 md:px-6 md:py-12 bg-black">
           <div className="flex flex-col w-1/2 pr-8 md:w-full">
             <h2 className="text-lg text-[#F99D1C] mb-3 font-bold">Who we are?</h2>
             <p className="text-wrap text-white leading-6 md:text-2xl sm:text-base">
@@ -40,7 +42,7 @@ const Page = () => {
             </p>
           </div>
           <div className="flex w-1/2 justify-end sm:hidden md:hidden">
-            <Image src="/images/Layer_1.png" alt="Hero Image" width={500} height={500} className="w-full max-w-xs" />
+            <Image src="/images/Layer_1.png" alt="Hero Image" width={250} height={250} />
           </div>
         </div>
       </div>
@@ -51,16 +53,21 @@ const Page = () => {
           <br />
           Creative Cronies Founders.
         </p>
-        <div className="flex flex-row justify-between gap-4 md:flex-col md:items-center">
+        {/* <div className="flex flex-row justify-between gap-4 md:flex-col md:items-center">
             {loading && <h2 className="animate-bounce text-3xl">Loading...</h2>}
-            {data && data.map((item) => (
-                <Card key={item._id} image={item.imageUrl} name={item.name} title={item.title} description={item.description}/>
-            ))}
-        </div>
+            {data && (
+              <React.Suspense fallback={<div>Loading...</div>}>
+                {data.map(item => (
+                  <Card key={item._id} image={item.imageUrl} name={item.name} title={item.title} description={item.description}/>
+                ))}
+              </React.Suspense>
+            )}
+        </div> */}
+        <FoundersList />
       </div>
       {/* What do we do */}
       <div className="flex flex-wrap w-full justify-between my-20">
-        <div className="w-full sm:px-8 px-32 flex flex-row items-center md:px-6 md:flex-col lg:px-6">
+        <div className="w-full sm:px-8 px-32 flex flex-row items-center md:px-6 md:flex-col lg:px-6 sm:flex-col-reverse">
           <div className="flex flex-col w-1/2 pr-8 md:w-full">
             <h2 className="text-lg text-[#F99D1C] mb-3 font-bold">What do we do?</h2>
             <p className="text-wrap text-white leading-6 md:text-2xl sm:text-base">
