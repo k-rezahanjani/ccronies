@@ -34,7 +34,7 @@ const Hero = () => {
         {/* Lottie */}
         {
           isClient &&
-          <div className="absolute right-0 top-0 -z-100">
+          <div className="absolute right-0 top-0 -z-100 sm:hidden">
             <Player
               autoplay
               loop

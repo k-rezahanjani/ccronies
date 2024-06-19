@@ -12,11 +12,21 @@ const Header = () => {
 
     const toggleMenu = () => setIsOpen(!isOpen);
     return ( 
-        <header className="bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5 h-24">
+        <header className="bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5">
+            {/* Logo */}
             <motion.div
                 initial={{x: -500, opacity: 0, scale: 1}} 
                 animate={{x: 0, opacity: 1, scale: 1}} 
                 transition={{duration: 1.5}}
+                className="sm:block lg:hidden md:hidden xl:hidden"
+            >
+                <Image src="/images/logo-resp.png" className='background-color: black' width={65} height={65} alt="logo"/>
+            </motion.div>
+            <motion.div
+                initial={{x: -500, opacity: 0, scale: 1}} 
+                animate={{x: 0, opacity: 1, scale: 1}} 
+                transition={{duration: 1.5}}
+                className="sm:hidden"
             >
                 <Image src="/images/logo.png" className='background-color: black' width={200} height={200} alt="logo"/>
             </motion.div>
