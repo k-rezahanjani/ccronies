@@ -3,11 +3,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedMenu, setSelectedMenu] = useState('');
+
+    useEffect(() => {
+        if (isOpen) {
+          document.body.classList.add('overflow-y-hidden');
+        } else {
+          document.body.classList.remove('overflow-y-hidden');
+        }
+        return () => {
+          document.body.classList.remove('overflow-y-hidden');
+        };
+      }, [isOpen]);
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -86,7 +97,7 @@ const Header = () => {
                         packages
                     </button>
                 </Link>
-                <Link href="#">
+                <Link href="/services">
                     <button 
                         onClick={() => handleMenuClick('service')}
                         className={`capitalize hover:text-[#F99D1C] ${selectedMenu === 'service' ? 'text-[#F99D1C]' : ''}`}
@@ -94,7 +105,7 @@ const Header = () => {
                         service
                     </button>
                 </Link>
-                <Link href="#">
+                <Link href="#footer">
                     <button 
                         onClick={() => handleMenuClick('contact')}
                         className={`capitalize hover:text-[#F99D1C] ${selectedMenu === 'contact' ? 'text-[#F99D1C]' : ''}`}
@@ -109,6 +120,16 @@ const Header = () => {
                 <button onClick={toggleMenu} className="text-white text-2xl">
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </button>
+                {
+                    isOpen && 
+                    <div className="absolute top-20 left-0 flex flex-col gap-y-8 w-full justify-center items-center bg-black min-h-screen">
+                        <Link href="/about" className="text-white" onClick={toggleMenu}>About</Link>
+                        <Link href="/portfolio" className="text-white" onClick={toggleMenu}>Portfolio</Link>
+                        <Link href="/packages" className="text-white" onClick={toggleMenu}>Packages</Link>
+                        <Link href="/services" className="text-white" onClick={toggleMenu}>Services</Link>
+                        <Link href="#footer" className="text-white" onClick={toggleMenu}>Contact</Link>
+                    </div>
+                }
             </div>
         </header>
     );

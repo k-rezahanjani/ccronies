@@ -2,7 +2,7 @@ import React from "react";
 import portfolio from '/data/portfolio.json'
 import Image from "next/image";
 
-const Portfolio = () => {
+const PortfolioCard = () => {
     return (
         <section className="flex flex-wrap bg-black text-white py-12 px-6 lg:px-24">
             {/* Items */}
@@ -23,4 +23,4 @@ const Portfolio = () => {
     );
 }
 
-export default Portfolio;
+export default PortfolioCard;

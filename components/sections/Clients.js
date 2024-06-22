@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CardLogo from "./CardLogo";
+import CardLogo from "../CardLogo";
 import { groq } from "next-sanity";
 import { client } from "@/creative-cronies/lib/client";
 
@@ -27,13 +27,13 @@ const Clients = () => {
     }, [])
 
     return ( 
-        <div className="flex flex-col gap-y-10 bg-[#050708]">
+        <div className="flex flex-col gap-y-10 bg-black my-20 -z-30">
             <div className="text-center mx-auto w-full">
                 <h2 className="text-4xl capitalize sm:text-3xl text-white">
                     <span className="text-gray-500">some of</span> the clients we have designed for
                 </h2>
             </div>
-            <div className="flex flex-row justify-center items-center gap-x-20 pb-10 lg:flex-col lg:gap-y-20 md:flex-col md:gap-y-20">
+            <div className="flex flex-row justify-center items-center gap-x-20 lg:flex-col lg:gap-y-20 md:flex-col md:gap-y-20">
                 {error && error}
                 {loading && <h2 className="animate-bounce text-3xl">Loading...</h2>}
                 {

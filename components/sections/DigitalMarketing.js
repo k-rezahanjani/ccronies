@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import marketingData from '../marketingData.json';
+import marketingData from '../../marketingData.json';
+import Clients from './Clients';
 
 const DigitalMarketing = () => {
   // Assuming marketingData has a 'marketing' array
@@ -10,7 +11,7 @@ const DigitalMarketing = () => {
   const bottomRowItems = marketing.slice(2);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#121415] py-10 px-5">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-black py-10 px-5 -z-40">
       <div className="flex flex-wrap justify-center items-start w-full lg:justify-between lg:flex-col-reverse md:flex-col-reverse">
         {/* Text */}
         <div className="max-w-2xl lg:w-1/2 px-10 md:w-full">
@@ -48,7 +49,7 @@ const DigitalMarketing = () => {
           </div>
         ))}
       </div>
-
+      <Clients />
       {/* "Let's Talk..." section */}
       <div className="w-full py-20 px-24 md:px-0 md:py-10">
         <p className="text-sm text-[#F99D1C] mb-3 capitalize text-left md:text-center">Want to start a project?</p>

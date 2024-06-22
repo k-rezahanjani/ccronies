@@ -1,11 +1,11 @@
 "use client"
 import { motion } from 'framer-motion'
-import ReadMoreButton from "./ReadMoreButton";
+import ReadMoreButton from "../ReadMoreButton";
 
 export default function About() {
 
     return ( 
-        <div className="min-h-screen flex px-32 lg:px-5 md:px-5 items-center justify-between bg-[#121415] lg:flex-col-reverse md:flex-col-reverse sm:flex-col-reverse sm:py-10 -z-10">
+        <div className="min-h-screen flex px-32 lg:px-5 md:px-5 items-center justify-between bg-black lg:flex-col-reverse md:flex-col-reverse sm:flex-col-reverse sm:py-10 -z-20">
             <div className="relative items-satart w-1/3 lg:w-full md:w-full sm:w-full sm:h-80">
                 <p className="text-[#F99D1C] font-bold text-lg">Welcome to Creative Cronies Studio</p>
                 <p className="text-start text-white text-wrap text-[0.9rem] leading-6 text-ellipsis capitalize md:overflow-hidden md:text-ellipsis h-[16.5rem] ">

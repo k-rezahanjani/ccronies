@@ -1,8 +1,8 @@
 "use client"
-import About from '@/components/About'
-import DigitalMarketing from '@/components/DigitalMarketing'
-import Hero from '@/components/Hero'
-import Portfolio from '@/components/Portfolio'
+import About from '@/components/sections/About'
+import DigitalMarketing from '@/components/sections/DigitalMarketing'
+import Hero from '@/components/sections/Hero'
+import Portfolio from '@/components/sections/Portfolio'
 import ScrollTop from '@/components/ScrollTop'
 
 

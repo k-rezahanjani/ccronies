@@ -1,5 +1,5 @@
 
-import Portfolio from '@/components/Portfolio';
+import PortfolioCard from '@/components/PorfolioCard';
 import Image from 'next/image';
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
                     </div>
                     </div>
                 </div>
-                <Portfolio />
+                <PortfolioCard />
             </main>
         </div>
     );

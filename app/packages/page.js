@@ -1,5 +1,5 @@
 "use client";
-import Services from "@/components/Services";
+import Services from "@/components/sections/Services";
 import Image from "next/image";
 import React from "react";
 
