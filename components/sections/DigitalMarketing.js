@@ -12,7 +12,7 @@ const DigitalMarketing = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-black py-10 px-5 -z-40">
-      <div className="flex flex-wrap justify-center items-start w-full lg:justify-between lg:flex-col-reverse md:flex-col-reverse">
+      <div className="flex flex-wrap justify-center items-start w-full lg:justify-between">
         {/* Text */}
         <div className="max-w-2xl lg:w-1/2 px-10 md:w-full">
             <h2 className="text-3xl text-[#F99D1C] capitalize mb-4">Graphic Design Services</h2>
@@ -24,7 +24,7 @@ const DigitalMarketing = () => {
             </p>
           </div>
         {/* Top row items alongside the text */}
-        <div className="flex justify-center flex-wrap items-center md:w-full mt-0">
+        <div className="flex justify-center flex-wrap items-center md:w-full mt-0 sm:flex-col-reverse">
           {topRowItems.map((item) => (
             <div
               className="bg-[#000] w-52 h-52 p-5 m-2 flex flex-col items-center justify-center rounded-lg"

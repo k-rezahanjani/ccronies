@@ -9,8 +9,8 @@ const Home = () => {
                 <div className="flex w-full justify-between">
                     <div className="w-full sm:px-8 ps-32 py-40 flex items-center lg:px-6 md:px-6 md:py-12 bg-black">
                     <div className="flex flex-col w-1/2 pr-8 md:w-full">
-                        <h2 className="text-lg text-[#F99D1C] mb-3">Let's see</h2>
-                        <p className="text-wrap text-white text-7xl font-bold md:text-2xl sm:text-base">
+                        <h2 className="text-lg text-[#F99D1C] mb-3 sm:text-3xl">Let's see</h2>
+                        <p className="text-wrap text-white text-7xl font-bold md:text-2xl sm:text-xl">
                             Our Works and Portfolio
                         </p>
                     </div>
