@@ -12,7 +12,7 @@ const DigitalMarketing = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-black py-10 px-5 -z-40">
       <div className="flex flex-wrap justify-center items-start w-full lg:justify-between">
         {/* Text */}
-        <div className="max-w-2xl lg:w-1/2 px-10 md:w-full">
+        <div className="max-w-2xl lg:w-1/2 px-10 md:w-full sm:px-0">
             <h2 className="text-3xl text-[#F99D1C] capitalize mb-4">Graphic Design Services</h2>
             <p className="text-[#C9C9C9] leading-6">
               With a focus on modern aesthetics, minimalism, and cutting-edge design techniques, our

@@ -8,7 +8,7 @@ const FoundersList = () => {
       {data.founders.map((founder) => (
         <Card
           key={founder._id}
-          image={founder.image}
+          image={founder.imageURL}
           name={founder.name}
           title={founder.title}
           description={founder.description}
