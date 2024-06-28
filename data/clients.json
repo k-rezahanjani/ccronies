@@ -1,0 +1,24 @@
+{
+    "clients": [
+        {
+            "id":1,
+            "name":"Biodent",
+            "image": "/images/clients/biodent.svg"
+        },
+        {
+            "id":2,
+            "name":"Polymet",
+            "image": "/images/clients/poly.svg"
+        },
+        {
+            "id":3,
+            "name":"Chiz Cast",
+            "image": "/images/clients/chiz.svg"
+        },
+        {
+            "id":4,
+            "name":"Curvey",
+            "image": "/images/clients/curvey.svg"
+        }
+    ]
+}

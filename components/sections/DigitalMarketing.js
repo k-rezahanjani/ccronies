@@ -3,10 +3,8 @@ import marketingData from '../../marketingData.json';
 import Clients from './Clients';
 
 const DigitalMarketing = () => {
-  // Assuming marketingData has a 'marketing' array
   const { marketing } = marketingData || { marketing: [] };
 
-  // Splitting the marketing data into two sections as per the design
   const topRowItems = marketing.slice(0, 2);
   const bottomRowItems = marketing.slice(2);
 

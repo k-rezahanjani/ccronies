@@ -1,34 +1,11 @@
 "use client";
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
 // import Card from "@/components/Card";
-import { client } from "@/creative-cronies/lib/client";
-import { groq } from "next-sanity";
 import FoundersList from "@/components/FoundersList";
 
-const Card = React.lazy(() => import('@/components/Card'));
+// const Card = React.lazy(() => import('@/components/Card'));
 
 const Page = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchItems = async () => {
-      try {
-        const query = groq`*[_type == 'founders']{name, _id, title, "imageUrl": image.asset->url, description}`;
-        const data = await client.fetch(query);
-        if (data && data.length > 0) {
-          setData(data);
-        }
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-        setLoading(false);
-      }
-    };
-
-    fetchItems();
-  }, []);
 
   return (
     <div className="min-h-screen bg-black flex flex-wrap">
@@ -53,16 +30,6 @@ const Page = () => {
           <br />
           Creative Cronies Founders.
         </p>
-        {/* <div className="flex flex-row justify-between gap-4 md:flex-col md:items-center">
-            {loading && <h2 className="animate-bounce text-3xl">Loading...</h2>}
-            {data && (
-              <React.Suspense fallback={<div>Loading...</div>}>
-                {data.map(item => (
-                  <Card key={item._id} image={item.imageUrl} name={item.name} title={item.title} description={item.description}/>
-                ))}
-              </React.Suspense>
-            )}
-        </div> */}
         <FoundersList />
       </div>
       {/* What do we do */}
