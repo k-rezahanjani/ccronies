@@ -1,17 +1,15 @@
 import React from "react";
 import Image from "next/image";
 
-const Card = ({ image, name, title, description }) => {
+const Card = ({ image, name, title, description, id }) => {
     return (
         <div className="flex flex-row items-center w-full bg-[#5F2F8E] p-2 lg:flex-col sm:flex-col sm:items-center">
             <div className="w-1/3 relative h-auto sm:w-1/2 sm:h-40 sm:mb-6">
             <Image 
                 src={image} 
                 alt={`Portrait of ${name}`}
-                width={100}
-                height={100}
-                layout="responsive"
-                objectFit="cover"
+                width={300}
+                height={300}
                 className="sm:rounded-full"  
             />
             </div>

@@ -7,7 +7,7 @@ const FoundersList = () => {
     <div className="flex flex-row justify-between gap-4 md:flex-col md:items-center">
       {data.founders.map((founder) => (
         <Card
-          key={founder._id}
+          key={founder.id}
           image={founder.imageURL}
           name={founder.name}
           title={founder.title}
