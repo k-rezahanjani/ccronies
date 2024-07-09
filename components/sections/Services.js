@@ -43,15 +43,14 @@ const Services = () => {
                                         className={`
                                             bg-white 
                                             font-semibold
-                                            py-0 
                                             px-4 
                                             border-2 
                                             border-[#F99D1C] 
-                                            rounded
+                                            rounded-xl
                                             hover:bg-[#F99D1C] 
                                             hover:text-black 
                                             hover:border-transparent 
-                                            my-2
+                                            my-3
                                             ${index % 2 === 0 ? 'text-[#5B2E91]' : 'text-gray-600'}`}
                                         >
                                         {item.timeline}
