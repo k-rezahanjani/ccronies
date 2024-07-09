@@ -8,7 +8,7 @@ const Services = () => {
                 <p className='text-[#F99D1C] text-xl text-left mb-6'>Best Promotion Offer For:</p>
                 <div className="flex gap-8 w-full items-center sm:flex-col">
                     <div className='flex items-start'>
-                        <p class="text-7xl [writing-mode:vertical-rl] text-[#9B80BA] text-center sm:[writing-mode:horizontal-tb] sm:text-4xl">Instagram</p>
+                        <p class="text-6xl [writing-mode:vertical-rl] rotate-180 text-[#9B80BA] text-center sm:[writing-mode:horizontal-tb] sm:text-4xl uppercase font-bold">Instagram</p>
                     </div>
                     {data.packages.map((item, index) => (
                         <PackageCard 
@@ -27,7 +27,7 @@ const Services = () => {
                 <p className='text-[#F99D1C] text-xl text-left mb-6'>Best Promotion Offer For:</p>
                 <div className="flex gap-8 w-full items-center sm:flex-col">
                     <div className='flex items-start'>
-                        <p class="text-7xl [writing-mode:vertical-rl] text-[#9B80BA] text-center sm:[writing-mode:horizontal-tb] sm:text-4xl">Branding</p>
+                        <p class="text-5xl [writing-mode:vertical-rl] rotate-180 text-[#9B80BA] text-center sm:[writing-mode:horizontal-tb] sm:text-4xl uppercase font-bold">Branding /<br/> Visual Identity</p>
                     </div>
                     {data.packages2.map((item, index) => (
                         <PackageCard 

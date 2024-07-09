@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="footer" className="bg-[#050708] py-10 flex flex-row justify-between items-center w-full px-40 md:flex-col sm:px-3 lg:px-6">
+    <footer id="footer" className="bg-black py-10 flex flex-row justify-between items-center w-full px-40 md:flex-col sm:px-3 lg:px-6">
       {/* Contact Info */}
       <div className="flex flex-col text-[#DBD8D3] text-sm md:my-10 md:order-2">
         <p>admin@ccronies.com</p>

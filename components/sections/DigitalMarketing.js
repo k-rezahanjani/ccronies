@@ -42,8 +42,13 @@ const DigitalMarketing = () => {
             className="bg-[#000] w-52 h-52 p-5 m-2 flex flex-col items-center justify-center rounded-lg"
             key={item.id}
           >
-            <Image src={item.image} alt={item.name} width={70} height={70} />
-            <p className="text-[#C9C9C9] mt-3 capitalize">{item.name}</p>
+            <Image 
+              src={item.image} 
+              alt={item.name} 
+              width={item.name === 'social media design' ? 45 : 70}  
+              height={item.name === 'social media design' ? 45 : 70} 
+              />
+            <p className="text-[#C9C9C9] mt-3 capitalize text-center">{item.name}</p>
           </div>
         ))}
       </div>
