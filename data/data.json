@@ -3,6 +3,7 @@
       {
         "plan": "Silver",
         "price": "25,500,000",
+        "description": "ideal for indivisuals who need quick access to basic designs.",
         "timeline": "Timeline: 15 work days",
         "features": [
           "10 Designed Instagram posts",
@@ -15,6 +16,7 @@
       {
         "plan": "Diamond",
         "price": "40,000,000",
+        "description": "ideal for who need advanced features & designs for work.",
         "timeline": "Timeline: 30 work days",
         "features": [
           "20 Designed Instagram posts",
@@ -27,6 +29,7 @@
     {
       "plan": "Gold",
       "price": "52,500,000",
+      "description": "ideal for business who need personalized pages.",
       "timeline": "Timeline: 30 work days",
       "features": [
         "30 Designed Instagram posts",
@@ -42,38 +45,44 @@
       {
         "plan": "Silver",
         "price": "45,500,000",
-        "timeline": "Timeline: 15 work days",
+        "description": "ideal for indivisuals who need quick access to basic designs.",
+        "timeline": "Timeline: 10-12 work days",
         "features": [
-          "10 Designed Instagram posts",
-          "20 Designed Instagram stories",
-          "4 Motion design",
-          "Slide posts",
-          "Graphic & videos in up to 4K"
+          {
+            "logo": "sign design | farsi logotype | english logotype | logo & logotypes variations | presents at least 2 logo designs",
+            "logo_motion": "10 seconds logo motion",
+            "branding": "logo grids & structures | logo rules | logo principles | logos with slogan | color palette | english & farsi fonts family | pattern design | graphical elements design" 
+          }
         ]
       },
       {
         "plan": "Diamond",
         "price": "58,000,000",
-        "timeline": "Timeline: 30 work days",
+        "description": "ideal for who need advanced features & designs for work.",
+        "timeline": "Timeline: 12-15 work days",
         "features": [
-          "20 Designed Instagram posts",
-          "40 Designed Instagram stories",
-          "4 Motion design",
-          "Slide posts included",
-          "Graphic & videos in up to 4K"
+          {
+            "logo": "sign design | farsi logotype | english logotype | logo & logotypes variations | presents at least 2 logo designs",
+            "logo_motion": "10 seconds logo motion",
+            "branding": "logo grids & structures | logo rules | logo principles | logos with slogan | color palette | english & farsi fonts family | pattern design | graphical elements design",
+            "stationary": "personal & official business cards |a4 & a5 letterhead | letter envelope & a4 | a4 folder" 
+          }
         ]
     },
     {
       "plan": "Gold",
       "price": "78,500,000",
-      "timeline": "Timeline: 30 work days",
+      "description": "ideal for business who need personalized pages.",
+      "timeline": "Timeline: 20-25 work days",
       "features": [
-        "30 Designed Instagram posts",
-        "60 Designed Instagram stories",
-        "6 Motion design",
-        "Slide posts included",
-        "Graphic & videos in up to 4K"
-      ]
+          {
+            "logo": "sign design | farsi logotype | english logotype | logo & logotypes variations | presents at least 2 logo designs",
+            "logo_motion": "10 seconds logo motion",
+            "branding": "logo grids & structures | logo rules | logo principles | logos with slogan | color palette | english & farsi fonts family | pattern design | graphical elements design",
+            "stationary": "personal & official business cards |a4 & a5 letterhead | letter envelope & a4 | a4 folder",
+            "packaging": "product main uniform design | product packaging | stickers design | shopping bag design | wrapping papers design" 
+          }
+        ]
     }
   ]
 }

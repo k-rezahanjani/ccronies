@@ -3,11 +3,12 @@ import React from "react";
 import { VscSend } from "react-icons/vsc";
 import { FaLinkedinIn, FaInstagram, FaBehance, FaWhatsapp } from "react-icons/fa";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
 
 const Footer = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (formData) => {
-    window.location.href = `mailto:info@ccronies.co?subject=Start a Project&body=Hi, here is my email: ${formData.email}.`;
+    window.location.href = `mailto:admin@ccronies.com?subject=Start a Project&body=Hi, here is my email: ${formData.email}.`;
   };
 
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
       {/* Contact Info */}
       <div className="flex flex-col text-[#DBD8D3] text-sm md:my-10 md:order-2">
         <p>admin@ccronies.com</p>
-        <p>+98-9912772037</p>
+        <p>+98-9308888039</p>
       </div>
 
       {/* Email Form and Social Links */}
@@ -39,10 +40,18 @@ const Footer = () => {
           </div>
         </form>
         <div className="flex gap-4">
-          <FaInstagram size={25} className="text-[#DBD8D3]" />
-          <FaLinkedinIn size={25} className="text-[#DBD8D3]" />
-          <FaBehance size={25} className="text-[#DBD8D3]" />
-          <FaWhatsapp size={25} className="text-[#DBD8D3]" />
+          <Link href="https://www.instagram.com/creative.cronies?igsh=OHhocjdtMWhjaTZz">
+            <FaInstagram size={25} className="text-[#DBD8D3]" />
+          </Link>
+          <Link href="https://www.behance.net/creativecronies">
+            <FaBehance size={25} className="text-[#DBD8D3]" />
+          </Link>
+          <Link href="http://linkedin.com/in/creativecronies">
+            <FaLinkedinIn size={25} className="text-[#DBD8D3]" />
+          </Link>
+          <Link href="https://wa.me/message/STYUCRJSSANFP1">
+            <FaWhatsapp size={25} className="text-[#DBD8D3]" />
+          </Link>
         </div>
       </div>
 
