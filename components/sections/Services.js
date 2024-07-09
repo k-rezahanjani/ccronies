@@ -4,7 +4,7 @@ import PackageCard from '../PackageCard';
 const Services = () => {
     return (
         <>
-            <div className='flex flex-col justify-center mx-auto mb-12 sm:px-6'>
+            <div className='flex flex-col justify-center px-32 mb-12 sm:px-6'>
                 <p className='text-[#F99D1C] text-xl text-left mb-6'>Best Promotion Offer For:</p>
                 <div className="flex gap-8 w-full items-center sm:flex-col">
                     <div className='flex items-start'>
@@ -23,7 +23,7 @@ const Services = () => {
                     ))}
                 </div>
             </div>
-            <div className='flex flex-col justify-center mx-auto mb-12 sm:px-6'>
+            <div className='flex flex-col justify-center px-32 mb-12 sm:px-6'>
                 <p className='text-[#F99D1C] text-xl text-left mb-6'>Best Promotion Offer For:</p>
                 <div className="flex gap-8 w-full items-center sm:flex-col">
                     <div className='flex items-start'>
