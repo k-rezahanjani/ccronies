@@ -12,17 +12,17 @@ const ImageCarousel = ({ images }) => {
     const handleNext = () => {
         setFade(true);
         setTimeout(() => {
-            setCurrentImage((prev) => (prev + 1) % images.length);
+            setCurrentImage((currentImage + 1) % images.length);
             setFade(false);
-        }, 300); 
+        }, 500); 
     };
 
     const handlePrev = () => {
         setFade(true);
         setTimeout(() => {
-            setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+            setCurrentImage((currentImage - 1) % images.length);
             setFade(false);
-        }, 300); 
+        }, 500); 
     };
 
     return (
