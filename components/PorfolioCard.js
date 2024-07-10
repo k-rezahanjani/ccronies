@@ -8,27 +8,27 @@ const ImageCarousel = ({ images }) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [fade, setFade] = useState(false);
 
-    const handleImageChange = (index) => {
-        setFade(true);
-        setTimeout(() => {
-            setCurrentImage(index);
-            setFade(false);
-        }, 500); 
-    };
 
     const handleNext = () => {
-        const nextImage = currentImage === images.length - 1 ? 0 : currentImage + 1;
-        handleImageChange(nextImage);
+        setFade(true);
+        setTimeout(() => {
+            setCurrentImage((prev) => (prev + 1) % images.length);
+            setFade(false);
+        }, 1000);
     };
 
     const handlePrev = () => {
-        const prevImage = currentImage === 0 ? images.length - 1 : currentImage - 1;
-        handleImageChange(prevImage);
+        setFade(true);
+        setTimeout(() => {
+            setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+            setFade(false);
+        }, 1000); 
     };
-
     return (
         <div
+            id="default-carousel"
             className="relative"
+            data-carousel="slide"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
@@ -44,35 +44,35 @@ const ImageCarousel = ({ images }) => {
             {hovered && (
                 <>
                     {/* Slider Indicators */}
-                    <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
                         {images.map((_, index) => (
-                            <button
-                                key={index}
-                                type="button"
-                                className={`w-3 h-3 rounded-full ${index === currentImage ? 'bg-white' : 'bg-gray-300'}`}
-                                aria-current={index === currentImage}
-                                aria-label={`Slide ${index + 1}`}
-                                data-carousel-slide-to={index}
-                                onClick={() => handleImageChange(index)}
-                            ></button>
-                        ))}
+                                <button
+                                    key={index}
+                                    type="button"
+                                    className={`w-3 h-3 rounded-full ${index === currentImage ? 'bg-white' : 'bg-gray-300'}`}
+                                    aria-current={index === currentImage}
+                                    aria-label={`Slide ${index + 1}`}
+                                    data-carousel-slide-to={index}
+                                    onClick={() => setCurrentImage(index)}
+                                ></button>
+                            ))}
                     </div>
-                    <button onClick={handlePrev} type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <button onClick={handlePrev} type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                             </svg>
-                            <span className="sr-only">Previous</span>
+                            <span class="sr-only">Previous</span>
                         </span>
                     </button>
-                    <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span onClick={handleNext} className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                            </svg>
-                            <span className="sr-only">Next</span>
-                        </span>
-                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span onClick={handleNext} class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
                 </>
             )}
         </div>
