@@ -12,7 +12,11 @@ const ImageCarousel = ({ images }) => {
     const handleNext = () => {
         setFade(true);
         setTimeout(() => {
-            setCurrentImage((prev) => prev + 1);
+            if(currentImage === images.length - 1) {
+                setCurrentImage(0);
+            } else {
+                setCurrentImage(currentImage + 1)
+            }
             setFade(false);
         }, 500); 
     };
@@ -20,7 +24,11 @@ const ImageCarousel = ({ images }) => {
     const handlePrev = () => {
         setFade(true);
         setTimeout(() => {
-            setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+            if(currentImage === 0) {
+                setCurrentImage(images.length - 1);
+            } else {
+                setCurrentImage(currentImage - 1)
+            }
             setFade(false);
         }, 500); 
     };
