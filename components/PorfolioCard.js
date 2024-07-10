@@ -32,15 +32,13 @@ const ImageCarousel = ({ images }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <div className={`transition duration-500 ease-out ${fade ? 'opacity-0' : 'opacity-100'}`}>
-                <Image
-                    src={images[currentImage]}
-                    alt={`Carousel Image ${currentImage}`}
-                    width={500}
-                    height={500}
-                    className="rounded-lg shadow-lg transition-all duration-500 ease-in-out"
-                />
-            </div>
+            <Image
+                src={images[currentImage]}
+                alt={`Carousel Image ${currentImage}`}
+                width={500}
+                height={500}
+                className={`transition duration-500 ease-out ${fade ? 'opacity-0' : 'opacity-100'}`}
+            />
             {hovered && (
                 <>
                     {/* Slider Indicators */}
