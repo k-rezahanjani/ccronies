@@ -6,13 +6,23 @@ import Image from "next/image";
 const ImageCarousel = ({ images }) => {
     const [hovered, setHovered] = useState(false);
     const [currentImage, setCurrentImage] = useState(0);
+    const [fade, setFade] = useState(false);
+
 
     const handleNext = () => {
-        setCurrentImage((prev) => (prev + 1) % images.length);
+        setFade(true);
+        setTimeout(() => {
+            setCurrentImage((prev) => (prev + 1) % images.length);
+            setFade(false);
+        }, 500); 
     };
 
     const handlePrev = () => {
-        setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+        setFade(true);
+        setTimeout(() => {
+            setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+            setFade(false);
+        }, 500); 
     };
 
     return (
@@ -23,13 +33,15 @@ const ImageCarousel = ({ images }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <Image
-                src={images[currentImage]}
-                alt={`Carousel Image ${currentImage}`}
-                width={500}
-                height={500}
-                className="rounded-lg shadow-lg transition-all duration-500 ease-in-out"
-            />
+            <div className={`transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}>
+                <Image
+                    src={images[currentImage]}
+                    alt={`Carousel Image ${currentImage}`}
+                    width={500}
+                    height={500}
+                    className="rounded-lg shadow-lg transition-all duration-500 ease-in-out"
+                />
+            </div>
             {hovered && (
                 <>
                     {/* Slider Indicators */}
