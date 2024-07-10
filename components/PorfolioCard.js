@@ -12,7 +12,7 @@ const ImageCarousel = ({ images }) => {
     const handleNext = () => {
         setFade(true);
         setTimeout(() => {
-            setCurrentImage((currentImage + 1) % images.length);
+            setCurrentImage((prev) => prev + 1);
             setFade(false);
         }, 500); 
     };
@@ -20,7 +20,7 @@ const ImageCarousel = ({ images }) => {
     const handlePrev = () => {
         setFade(true);
         setTimeout(() => {
-            setCurrentImage((currentImage - 1) % images.length);
+            setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
             setFade(false);
         }, 500); 
     };
@@ -33,7 +33,7 @@ const ImageCarousel = ({ images }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <div className={`transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}>
+            <div className={`transition duration-500 ease-out ${fade ? 'opacity-0' : 'opacity-100'}`}>
                 <Image
                     src={images[currentImage]}
                     alt={`Carousel Image ${currentImage}`}
