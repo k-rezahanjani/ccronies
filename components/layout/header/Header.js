@@ -89,14 +89,14 @@ const Header = () => {
                         portfolio
                     </button>
                 </Link>
-                <Link href="/packages">
+                {/* <Link href="/packages">
                     <button 
                         onClick={() => handleMenuClick('packages')}
                         className={`capitalize hover:text-[#F99D1C] ${selectedMenu === 'packages' ? 'text-[#F99D1C]' : ''}`}
                     >
                         packages
                     </button>
-                </Link>
+                </Link> */}
                 <Link href="/services">
                     <button 
                         onClick={() => handleMenuClick('service')}
