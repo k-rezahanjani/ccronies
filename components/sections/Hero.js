@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// Dynamically import Player to ensure it is only loaded on the client-side
 const Player = dynamic(() => import('@lottiefiles/react-lottie-player').then(mod => mod.Player), { ssr: false });
 
 const style = {
@@ -20,7 +19,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black flex justify-between items-center relative -z-10">
+    <div className="min-h-screen bg-black flex justify-between items-center relative">
       <div className="flex flex-wrap w-full justify-between">
         <div className="w-full sm:ps-8 ps-32">
           <motion.div
@@ -50,16 +49,18 @@ const Hero = () => {
 
       {/* Button */}
       <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
-        <motion.div
-          initial={{ y: 200, scale: 1, opacity: 0 }}
-          animate={{ y: 0, scale: 1, opacity: 1 }}
-          transition={{ duration: 1.4 }}
-          className="flex items-center space-x-2 w-36 p-1 cursor-pointer"
-        >
-          <Link href="#about" className="my-auto text-white cursor-pointer">Scroll Down</Link>
-          <Image src="/images/arrowDown.svg" width={30} height={30} className="mt-2 ms-1 cursor-pointer" />
-        </motion.div>
-      </div>
+            <motion.div
+                initial={{ y: 200, scale: 1, opacity: 0 }}
+                animate={{ y: 0, scale: 1, opacity: 1 }}
+                transition={{ duration: 1.4 }}
+                className="flex items-center space-x-2 w-36 p-1"
+            >
+                <a href="#about" className="my-auto text-white flex items-center cursor-pointer">
+                    Scroll Down
+                    <Image src="/images/arrowDown.svg" width={30} height={30} alt="Arrow Down" className="mt-2 ms-1" />
+                </a>
+            </motion.div>
+        </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@ export default function Portfolio() {
             </div>
             <div className='flex ml-auto lg:flex-row lg:w-full lg:justify-center sm:flex-col md:flex-col sm:mt-14'>
                 <div className='flex justify-end items-center float-right md:flex-col md:mx-auto'>
-                    <img src="/images/pback.png" className="w-1/2 rounded-md md:w-full sm:mb-20"/>
+                    <img src="/images/pback.png" className="w-[66%] rounded-md md:w-full sm:mb-20"/>
                 </div>
             </div>
         </div>

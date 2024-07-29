@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import marketingData from '../../marketingData.json';
-import Clients from './Clients';
+import data from "/data/clients.json";
+import CardLogo from '../CardLogo';
 
 const DigitalMarketing = () => {
   const { marketing } = marketingData || { marketing: [] };
@@ -52,7 +53,22 @@ const DigitalMarketing = () => {
           </div>
         ))}
       </div>
-      <Clients />
+      {/* Clients */}
+      <div className="flex flex-col gap-y-10 bg-black my-20 px-5 w-full">
+            <div className="text-center mx-auto">
+                <h2 className="text-4xl capitalize sm:text-3xl text-white">
+                    <span className="text-gray-500">some of</span> the clients we have designed for
+                </h2>
+            </div>
+            {/* Logo */}
+            <div className="flex flex-row items-center gap-x-10 overflow-x-scroll snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thumb-[#F99D1C]/80 scrollbar-thin">
+                {
+                    data.clients.map((item) => (
+                        <CardLogo key={item.id} image={item.image} name={item.name} title={item.name}/>
+                    ))
+                }
+            </div>
+        </div>
       {/* "Let's Talk..." section */}
       <div className="w-full py-20 px-24 md:px-0 md:py-10">
         <p className="text-sm text-[#F99D1C] mb-3 capitalize text-left md:text-center">Want to start a project?</p>

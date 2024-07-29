@@ -41,16 +41,16 @@ const Footer = () => {
         </form>
         <div className="flex gap-4">
           <Link href="https://www.instagram.com/creative.cronies?igsh=OHhocjdtMWhjaTZz">
-            <FaInstagram size={25} className="text-[#DBD8D3]" />
+            <FaInstagram size={20} className="text-[#DBD8D3]" />
           </Link>
           <Link href="https://www.behance.net/creativecronies">
-            <FaBehance size={25} className="text-[#DBD8D3]" />
+            <FaBehance size={20} className="text-[#DBD8D3]" />
           </Link>
-          <Link href="http://linkedin.com/in/creativecronies">
-            <FaLinkedinIn size={25} className="text-[#DBD8D3]" />
+          <Link href="https://linkedin.com/company/creativecronies">
+            <FaLinkedinIn size={20} className="text-[#DBD8D3]" />
           </Link>
           <Link href="https://wa.me/message/STYUCRJSSANFP1">
-            <FaWhatsapp size={25} className="text-[#DBD8D3]" />
+            <FaWhatsapp size={20} className="text-[#DBD8D3]" />
           </Link>
         </div>
       </div>

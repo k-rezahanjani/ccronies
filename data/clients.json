@@ -19,6 +19,36 @@
             "id":4,
             "name":"Curvey",
             "image": "/images/clients/curvey.svg"
+        },
+        {
+            "id":5,
+            "name":"Wan",
+            "image": "/images/clients/wan.svg"
+        },
+        {
+            "id":6,
+            "name":"AsiaTech",
+            "image": "/images/clients/asia.svg"
+        },
+        {
+            "id":7,
+            "name":"Tim Coffee",
+            "image": "/images/clients/tim.svg"
+        },
+        {
+            "id":8,
+            "name":"Bionji",
+            "image": "/images/clients/bionij.svg"
+        },
+        {
+            "id":9,
+            "name":"Rad",
+            "image": "/images/clients/rad.svg"
+        },
+        {
+            "id":10,
+            "name":"Coop",
+            "image": "/images/clients/coop.svg"
         }
     ]
 }

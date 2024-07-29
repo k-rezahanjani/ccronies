@@ -122,7 +122,7 @@ const Header = () => {
                 </button>
                 {
                     isOpen && 
-                    <div className="absolute top-20 left-0 flex flex-col gap-y-8 w-full justify-center items-center bg-black min-h-screen">
+                    <div className="absolute top-20 left-0 flex flex-col gap-y-8 w-full justify-center items-center bg-black min-h-screen z-50">
                         <Link href="/about" className="text-white" onClick={toggleMenu}>About</Link>
                         <Link href="/portfolio" className="text-white" onClick={toggleMenu}>Portfolio</Link>
                         <Link href="/packages" className="text-white" onClick={toggleMenu}>Packages</Link>
