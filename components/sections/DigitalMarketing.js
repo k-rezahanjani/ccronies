@@ -61,7 +61,7 @@ const DigitalMarketing = () => {
                 </h2>
             </div>
             {/* Logo */}
-            <div className="flex flex-row items-center gap-x-10 overflow-x-scroll snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thumb-[#F99D1C]/80 scrollbar-thin">
+            <div className="flex flex-row items-center gap-x-10 overflow-x-scroll scrollbar-none">
                 {
                     data.clients.map((item) => (
                         <CardLogo key={item.id} image={item.image} name={item.name} title={item.name}/>
