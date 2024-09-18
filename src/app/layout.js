@@ -9,6 +9,7 @@ import Footer from '@/components/layout/footer/Footer';
 import './globals.css';
 
 const mont = Montserrat({ subsets: ['latin'] });
+
 const myFont = localFont({ src: './font/Morabba-Regular.woff' });
 
 export const metadata = {
