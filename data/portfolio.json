@@ -3,27 +3,77 @@
         {
             "title": "Logo Design",
             "description": "We create distinctive and memorable logos that embody your brand’s essence and values.",
-            "images": ["/images/portfolio/logo.png", "/images/portfolio/sub-images/logo1.png", "/images/portfolio/sub-images/logo2.png","/images/portfolio/sub-images/logo3.png","/images/portfolio/sub-images/logo4.png","/images/portfolio/sub-images/logo5.png","/images/portfolio/sub-images/logo7.png","/images/portfolio/sub-images/logo8.png"]
+            "images": [
+                "https://biaupload.com/do.php?imgf=org-a0e9c05b1e531.png",
+                "https://biaupload.com/do.php?imgf=org-0d420748c9f51.png",
+                "https://biaupload.com/do.php?imgf=org-58401a6b89832.png",
+                "https://biaupload.com/do.php?imgf=org-f6c5b91e12d93.png",
+                "https://biaupload.com/do.php?imgf=org-e4d74f2a144b4.png",
+                "https://biaupload.com/do.php?imgf=org-f47ab0ac27a21.png",
+                "https://biaupload.com/do.php?imgf=org-bb9eeaf953162.png",
+                "https://biaupload.com/do.php?imgf=org-6eea28c8dd6a3.png",
+                "https://biaupload.com/do.php?imgf=org-5c8bd2baf1c44.png"
+            ]
         },
         {
             "title": "Branding Design",
             "description": "Developing a cohesive visual identity, including logo, color palette, typography, and brand guidelines, ensuring consistency across all touchpoints.",
-            "images": ["/images/portfolio/branding.png", "/images/portfolio/sub-images/branding2.png", "/images/portfolio/sub-images/branding3.png","/images/portfolio/sub-images/branding4.png","/images/portfolio/sub-images/branding5.png","/images/portfolio/sub-images/branding6.png","/images/portfolio/sub-images/branding7.png","/images/portfolio/sub-images/branding8.png","/images/portfolio/sub-images/branding9.png"]
+            "images": [
+                "https://biaupload.com/do.php?imgf=org-8dd0e0df75511.png",
+                "https://biaupload.com/do.php?imgf=org-9df860b85c0a1.png",
+                "https://biaupload.com/do.php?imgf=org-ebab89d693282.png",
+                "https://biaupload.com/do.php?imgf=org-b2d73b598efd3.png",
+                "https://biaupload.com/do.php?imgf=org-d3b2680135434.png",
+                "https://biaupload.com/do.php?imgf=org-e753a5bf1a9a1.png",
+                "https://biaupload.com/do.php?imgf=org-f2b4e8200c802.png",
+                "https://biaupload.com/do.php?imgf=org-93dcc239ddbd3.png",
+                "https://biaupload.com/do.php?imgf=org-d53656bd16d44.png"
+            ]
         },
         {
             "title": "Packaging Design",
             "description": "Packaging is often your first brand impression. We create packaging designs that not only protect your product but also tell your brand story, incorporating elements like color, shape, and materials to ensure your brand personality and values.",
-            "images": ["/images/portfolio/packaging.png", "/images/portfolio/sub-images/packaging2.png", "/images/portfolio/sub-images/packaging3.png", "/images/portfolio/sub-images/packaging4.png", "/images/portfolio/sub-images/packaging5.png", "/images/portfolio/sub-images/packaging6.png", "/images/portfolio/sub-images/packaging7.png", "/images/portfolio/sub-images/packaging8.png", "/images/portfolio/sub-images/packaging9.png", "/images/portfolio/sub-images/packaging10.png"]
+            "images": [
+                "https://biaupload.com/do.php?imgf=org-1064b39d43b31.png",
+                "https://biaupload.com/do.php?imgf=org-29e0975aedb41.png",
+                "https://biaupload.com/do.php?imgf=org-52a9becdc4432.png",
+                "https://biaupload.com/do.php?imgf=org-a0e39d62d63f3.png",
+                "https://biaupload.com/do.php?imgf=org-d9b0540f25824.png",
+                "https://biaupload.com/do.php?imgf=org-a1007f05f32f1.png",
+                "https://biaupload.com/do.php?imgf=org-6a5df8f239f02.png",
+                "https://biaupload.com/do.php?imgf=org-76dc0ec81b2a3.png",
+                "https://biaupload.com/do.php?imgf=org-024cd25cb43a4.png",
+                "https://biaupload.com/do.php?imgf=org-3578cf0e78ed1.png"
+            ]
         },
         {
             "title": "Social Media Design",
             "description": "Engage your audience on social media with eye-catching graphics. Our designs ensure your brand stands out in every post, story, and ad.",
-            "images": ["/images/portfolio/social.png", "/images/portfolio/sub-images/social2.png", "/images/portfolio/sub-images/social3.png", "/images/portfolio/sub-images/social4.png", "/images/portfolio/sub-images/social5.png", "/images/portfolio/sub-images/social6.png", "/images/portfolio/sub-images/social7.png", "/images/portfolio/sub-images/social8.png", "/images/portfolio/sub-images/social9.png"]
+            "images": [
+                "https://biaupload.com/do.php?imgf=org-7f5a35941ca01.png",
+                "https://biaupload.com/do.php?imgf=org-29588ff5a0601.png",
+                "https://biaupload.com/do.php?imgf=org-ee72a6d2e0e52.png",
+                "https://biaupload.com/do.php?imgf=org-89126dd57a943.png",
+                "https://biaupload.com/do.php?imgf=org-45def7d4bafe4.png",
+                "https://biaupload.com/do.php?imgf=org-ea82c4dfff631.png",
+                "https://biaupload.com/do.php?imgf=org-ca77d5c03d692.png",
+                "https://biaupload.com/do.php?imgf=org-b5776518ffa43.png",
+                "https://biaupload.com/do.php?imgf=org-9a90ec44ea774.png"
+            ]
         },
         {
             "title": "Web / App Design",
             "description": "Our team designs visually appealing and user-friendly websites and apps. We focus on creating digital experiences that engage users and enhance your digital presence.",
-            "images": ["/images/portfolio/web.png", "/images/portfolio/sub-images/web2.png", "/images/portfolio/sub-images/web3.png", "/images/portfolio/sub-images/web4.png", "/images/portfolio/sub-images/web5.png", "/images/portfolio/sub-images/web6.png", "/images/portfolio/sub-images/web7.png", "/images/portfolio/sub-images/web8.png"]
+            "images": [
+                "https://biaupload.com/do.php?imgf=org-2b0289510d301.png",
+                "https://biaupload.com/do.php?imgf=org-8310078d6cfe1.png",
+                "https://biaupload.com/do.php?imgf=org-fc114c5e014e2.png",
+                "https://biaupload.com/do.php?imgf=org-cd94503d146f3.png",
+                "https://biaupload.com/do.php?imgf=org-037b3806f9804.png",
+                "https://biaupload.com/do.php?imgf=org-1fa2016ccc991.png",
+                "https://biaupload.com/do.php?imgf=org-912538f3e8cc2.png",
+                "https://biaupload.com/do.php?imgf=org-075e39e5062f3.png"
+            ]
         }
     ]
 }

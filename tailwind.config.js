@@ -3,7 +3,10 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './public/**/*.{js, ts, jsx}',
+    './src/app/[locale]/**/*.{js, ts, jsx}',
+    './src/components/**/*.{js, ts, jsx}'
   ],
   theme: {
     screens: {
@@ -29,4 +32,7 @@ module.exports = {
   plugins: [
     require('tailwind-scrollbar'),
   ],
+  fontFamily: {
+    morabba: ['Morabba']
+  }
 }

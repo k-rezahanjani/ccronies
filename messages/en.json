@@ -1,0 +1,249 @@
+{
+    "Header": {
+        "about": "About",
+        "portfolioNav": "Portfolio",
+        "servicesNav": "Services",
+        "contact": "Contact"
+    },
+    "Hero": {
+        "hello": "Hello People!",
+        "we_are": "We're",
+        "we_are2": "Creative Cronies",
+        "scroll": "Scroll Down",
+        "about": {
+            "welcome": "Welcome to Creative Cronies Studio",
+            "desc": "where boundless creativity and design expertise come together to craft innovative visual solutions.",
+            "desc2": "As a dynamic duo of graphic designers with a passion for artistic collaboration, we pride ourselves on delivering captivating designs that elevate brands and mesmerize audiences.",
+            "read_more": "Read More"
+        },
+        "portfolio": {
+            "title": "A bit about our portfolio",
+            "desc": "Welcome to our creative wonderland, where design dreams take flight and visual stories come to life. In our extensive portfolio, you will find a diverse collection of design projects that showcase our passion for crafting innovative, modern, and captivating visual experiences.",
+            "more_works": "More Works"
+        },
+        "digital_marketing": {
+            "title": "Graphic Design Services",
+            "desc": "With a focus on modern aesthetics, minimalism, and cutting-edge design techniques, our services cover a wide spectrum of design realms. From crafting iconic logos and brand visual identities to developing engaging motion graphics and user-friendly websites, we take pride in delivering design solutions that leave a lasting impression."
+        },
+        "marketing": [
+            {
+                "id": 1,
+                "name": "branding design",
+                "image": "https://biaupload.com/do.php?imgf=org-3635a2c2ab5a2.png"
+            },
+            {
+                "id": 2,
+                "name": "logo design",
+                "image": "https://biaupload.com/do.php?imgf=org-ddb55b5badb33.png"
+            },
+            {
+                "id": 3,
+                "name": "video & motion graphic",
+                "image": "https://biaupload.com/do.php?imgf=org-e72e296e33781.png"
+            },
+            {
+                "id": 4,
+                "name": "social media design",
+                "image": "https://biaupload.com/do.php?imgf=org-4895931f5e784.png"
+            },
+            {
+                "id": 5,
+                "name": "advertising and marketing design",
+                "image": "https://biaupload.com/do.php?imgf=org-f936ac6f8f423.png"
+            },
+            {
+                "id": 6,
+                "name": "web design",
+                "image": "https://biaupload.com/do.php?imgf=org-349bb304c0c22.png"
+            },
+            {
+                "id": 7,
+                "name": "packaging design",
+                "image": "https://biaupload.com/do.php?imgf=org-9f29f10386281.png"
+            }
+        ],
+        "client": {
+            "some": "some of",
+            "desc": "the clients we have designed for"
+        },
+        "project": {
+            "project_title": "Want to start a project?"
+        },
+        "talk": {
+            "title": "Let's Talk..."
+        },
+        "clients": [
+            {
+                "id": 1,
+                "name": "Biodent",
+                "image": "https://biaupload.com/do.php?imgf=org-dd0845d6ece14.png"
+            },
+            {
+                "id": 2,
+                "name": "Polymet",
+                "image": "https://biaupload.com/do.php?imgf=org-13ca9b22f1781.png"
+            },
+            {
+                "id": 3,
+                "name": "Chiz Cast",
+                "image": "https://biaupload.com/do.php?imgf=org-a1bcb71bc25a2.png"
+            },
+            {
+                "id": 4,
+                "name": "Curvey",
+                "image": "https://biaupload.com/do.php?imgf=org-fb1458fee76b3.png"
+            },
+            {
+                "id": 5,
+                "name": "Wan",
+                "image": "https://biaupload.com/do.php?imgf=org-ab652cb930ba1.png"
+            },
+            {
+                "id": 6,
+                "name": "AsiaTech",
+                "image": "https://biaupload.com/do.php?imgf=org-5ddddf94a92c3.png"
+            },
+            {
+                "id": 7,
+                "name": "Tim Coffee",
+                "image": "https://biaupload.com/do.php?imgf=org-ff47c61b89611.png"
+            },
+            {
+                "id": 8,
+                "name": "Bionji",
+                "image": "https://biaupload.com/do.php?imgf=org-4263c7a6fe302.png"
+            },
+            {
+                "id": 9,
+                "name": "Rad",
+                "image": "https://biaupload.com/do.php?imgf=org-4e5f8139eb604.png"
+            },
+            {
+                "id": 10,
+                "name": "Coop",
+                "image": "https://biaupload.com/do.php?imgf=org-3341b36cbe242.png"
+            }
+        ]
+    },
+    "About_Us": {
+        "title": "Who we are?",
+        "desc": "We are Creative Cronies, With years of experience in the design industry. Our journey began as close friends and creative comrades. Our shared love for modern, minimal, and imaginative design fueled our ambition to establish our design sanctuary.",
+        "founders_title1": "Meet",
+        "founders_title2": "Creative Cronies Founders.",
+        "tara_name": "Tara Nabatian",
+        "tara_title": "Senior Graphic Designer",
+        "tara_desc": "Hi, I'm a creative graphic designer with expertise in logo and branding design. I hold a bachelor's degree from the University of Science and Culture. I'm passionate about crafting compelling visual identities that capture your brand's essence.",
+        "saba_name": "Saba Ebrahimi",
+        "saba_title": "Senior Graphic Designer",
+        "saba_desc": "Hi, I'm creative advertising designer with demonstrated history of working in the digital marketing. Skilled in Design, Motion Graphics, Branding and Print. I've got master graduated from University of Science and Culture.",
+        "what_do_we_do": "What do we do?",
+        "what_desc": "At Creative Cronies Studio, our specialized services encompass a wide array of design realms. From crafting eye-catching logos that embody brand identities to conceptualizing awe-inspiring motion graphics that breathe life into your visual storytelling, we revel in every design challenge that comes our way. Whether it's curating brand visual identities, creating stunning UI designs, or crafting seamless web designs, we strive to exceed expectations with every project we undertake.",
+        "founders": [
+            {
+                "id": 1,
+                "name": "Tara Nabatian",
+                "title": "Senior Graphic Designer",
+                "description": "Hi, I'm a creative graphic designer with expertise in logo and branding design. I hold a bachelor's degree from the University of Science and Culture. I'm passionate about crafting compelling visual identities that capture your brand's essence.",
+                "imageURL": "/images/founders/Tara.png"
+            },
+            {
+                "id": 2,
+                "name": "Saba Ebrahimi",
+                "title": "Senior Graphic Designer",
+                "description": "Hi, I'm creative advertising designer with demonstrated history of working in the digital marketing. Skilled in Design, Motion Graphics, Branding and Print. I've got master graduated from University of Science and Culture.",
+                "imageURL": "/images/founders/Saba.png"
+            }
+        ]
+    },
+    "Portfolio": {
+        "title": "Let's see",
+        "desc": "Our Works and Portfolio",
+        "portfolio": [
+            {
+                "title": "Logo Design",
+                "description": "We create distinctive and memorable logos that embody your brand’s essence and values.",
+                "images": [
+                    "https://biaupload.com/do.php?imgf=org-a0e9c05b1e531.png",
+                    "https://biaupload.com/do.php?imgf=org-0d420748c9f51.png",
+                    "https://biaupload.com/do.php?imgf=org-58401a6b89832.png",
+                    "https://biaupload.com/do.php?imgf=org-f6c5b91e12d93.png",
+                    "https://biaupload.com/do.php?imgf=org-e4d74f2a144b4.png",
+                    "https://biaupload.com/do.php?imgf=org-f47ab0ac27a21.png",
+                    "https://biaupload.com/do.php?imgf=org-bb9eeaf953162.png",
+                    "https://biaupload.com/do.php?imgf=org-6eea28c8dd6a3.png",
+                    "https://biaupload.com/do.php?imgf=org-5c8bd2baf1c44.png"
+                ]
+            },
+            {
+                "title": "Branding Design",
+                "description": "Developing a cohesive visual identity, including logo, color palette, typography, and brand guidelines, ensuring consistency across all touchpoints.",
+                "images": [
+                    "https://biaupload.com/do.php?imgf=org-8dd0e0df75511.png",
+                    "https://biaupload.com/do.php?imgf=org-9df860b85c0a1.png",
+                    "https://biaupload.com/do.php?imgf=org-ebab89d693282.png",
+                    "https://biaupload.com/do.php?imgf=org-b2d73b598efd3.png",
+                    "https://biaupload.com/do.php?imgf=org-d3b2680135434.png",
+                    "https://biaupload.com/do.php?imgf=org-e753a5bf1a9a1.png",
+                    "https://biaupload.com/do.php?imgf=org-f2b4e8200c802.png",
+                    "https://biaupload.com/do.php?imgf=org-93dcc239ddbd3.png",
+                    "https://biaupload.com/do.php?imgf=org-d53656bd16d44.png"
+                ]
+            },
+            {
+                "title": "Packaging Design",
+                "description": "Packaging is often your first brand impression. We create packaging designs that not only protect your product but also tell your brand story, incorporating elements like color, shape, and materials to ensure your brand personality and values.",
+                "images": [
+                    "https://biaupload.com/do.php?imgf=org-1064b39d43b31.png",
+                    "https://biaupload.com/do.php?imgf=org-29e0975aedb41.png",
+                    "https://biaupload.com/do.php?imgf=org-52a9becdc4432.png",
+                    "https://biaupload.com/do.php?imgf=org-a0e39d62d63f3.png",
+                    "https://biaupload.com/do.php?imgf=org-d9b0540f25824.png",
+                    "https://biaupload.com/do.php?imgf=org-a1007f05f32f1.png",
+                    "https://biaupload.com/do.php?imgf=org-6a5df8f239f02.png",
+                    "https://biaupload.com/do.php?imgf=org-76dc0ec81b2a3.png",
+                    "https://biaupload.com/do.php?imgf=org-024cd25cb43a4.png",
+                    "https://biaupload.com/do.php?imgf=org-3578cf0e78ed1.png"
+                ]
+            },
+            {
+                "title": "Social Media Design",
+                "description": "Engage your audience on social media with eye-catching graphics. Our designs ensure your brand stands out in every post, story, and ad.",
+                "images": [
+                    "https://biaupload.com/do.php?imgf=org-7f5a35941ca01.png",
+                    "https://biaupload.com/do.php?imgf=org-29588ff5a0601.png",
+                    "https://biaupload.com/do.php?imgf=org-ee72a6d2e0e52.png",
+                    "https://biaupload.com/do.php?imgf=org-89126dd57a943.png",
+                    "https://biaupload.com/do.php?imgf=org-45def7d4bafe4.png",
+                    "https://biaupload.com/do.php?imgf=org-ea82c4dfff631.png",
+                    "https://biaupload.com/do.php?imgf=org-ca77d5c03d692.png",
+                    "https://biaupload.com/do.php?imgf=org-b5776518ffa43.png",
+                    "https://biaupload.com/do.php?imgf=org-9a90ec44ea774.png"
+                ]
+            },
+            {
+                "title": "Web / App Design",
+                "description": "Our team designs visually appealing and user-friendly websites and apps. We focus on creating digital experiences that engage users and enhance your digital presence.",
+                "images": [
+                    "https://biaupload.com/do.php?imgf=org-2b0289510d301.png",
+                    "https://biaupload.com/do.php?imgf=org-8310078d6cfe1.png",
+                    "https://biaupload.com/do.php?imgf=org-fc114c5e014e2.png",
+                    "https://biaupload.com/do.php?imgf=org-cd94503d146f3.png",
+                    "https://biaupload.com/do.php?imgf=org-037b3806f9804.png",
+                    "https://biaupload.com/do.php?imgf=org-1fa2016ccc991.png",
+                    "https://biaupload.com/do.php?imgf=org-912538f3e8cc2.png",
+                    "https://biaupload.com/do.php?imgf=org-075e39e5062f3.png"
+                ]
+            }
+        ]
+    },
+    "Services": {
+        "services_title": "Graphic Design Services",
+        "services_desc": "With a focus on modern aesthetics, minimalism, and cutting-edge design techniques, our services cover a wide spectrum of design realms. From crafting iconic logos and brand visual identities to developing engaging motion graphics and user-friendly websites, we take pride in delivering design solutions that leave a lasting impression."
+    },
+    "Footer": {
+        "email": "admin@ccronies.com",
+        "tel": "+98-9308888039",
+        "project": "Start a project",
+        "placeholder": "Add Your Email"
+    }
+}

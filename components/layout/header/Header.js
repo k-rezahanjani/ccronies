@@ -4,10 +4,19 @@ import Link from "next/link";
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { Montserrat } from "next/font/google";
+
+const mont = Montserrat({ subsets: ['latin'] });
+
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedMenu, setSelectedMenu] = useState('');
+
+    const t = useTranslations("Header");
+    const locale = useLocale()
+    const isRTL = locale === 'fa'
 
     useEffect(() => {
         if (isOpen) {
@@ -31,7 +40,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5">
+        <header className={`bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5 ${isRTL ? '' : mont.className}`}>
             {/* Logo */}
             <motion.div
                 initial={{ x: -500, opacity: 0, scale: 1 }}
@@ -78,7 +87,7 @@ const Header = () => {
                         onClick={() => handleMenuClick('about')}
                         className={`capitalize hover:text-[#F99D1C] ${selectedMenu === 'about' ? 'text-[#F99D1C]' : ''}`}
                     >
-                        about
+                        { t('about') }
                     </button>
                 </Link>
                 <Link href="/portfolio">
@@ -86,7 +95,7 @@ const Header = () => {
                         onClick={() => handleMenuClick('portfolio')}
                         className={`capitalize hover:text-[#F99D1C] ${selectedMenu === 'portfolio' ? 'text-[#F99D1C]' : ''}`}
                     >
-                        portfolio
+                        { t('portfolioNav') }
                     </button>
                 </Link>
                 {/* <Link href="/packages">
@@ -102,7 +111,7 @@ const Header = () => {
                         onClick={() => handleMenuClick('service')}
                         className={`capitalize hover:text-[#F99D1C] ${selectedMenu === 'service' ? 'text-[#F99D1C]' : ''}`}
                     >
-                        service
+                        { t('servicesNav') }
                     </button>
                 </Link>
                 <Link href="#footer">
@@ -110,7 +119,7 @@ const Header = () => {
                         onClick={() => handleMenuClick('contact')}
                         className={`capitalize hover:text-[#F99D1C] ${selectedMenu === 'contact' ? 'text-[#F99D1C]' : ''}`}
                     >
-                        contact
+                        { t('contact') }
                     </button>
                 </Link>
                 {/* <RxHamburgerMenu name="menu" className="text-3xl text-orange-400 cursor-pointer" onClick={(e) => onToggle(e.name)}/> */}
@@ -123,10 +132,10 @@ const Header = () => {
                 {
                     isOpen && 
                     <div className="absolute top-20 left-0 flex flex-col gap-y-8 w-full justify-center items-center bg-black min-h-screen z-50">
-                        <Link href="/about" className="text-white" onClick={toggleMenu}>About</Link>
-                        <Link href="/portfolio" className="text-white" onClick={toggleMenu}>Portfolio</Link>
-                        <Link href="/services" className="text-white" onClick={toggleMenu}>Services</Link>
-                        <Link href="#footer" className="text-white" onClick={toggleMenu}>Contact</Link>
+                        <Link href="/about" className="text-white" onClick={toggleMenu}>{ t('about') }</Link>
+                        <Link href="/portfolio" className="text-white" onClick={toggleMenu}>{ t('portfolioNav') }</Link>
+                        <Link href="/services" className="text-white" onClick={toggleMenu}>{ t('servicesNav') }</Link>
+                        <Link href="#footer" className="text-white" onClick={toggleMenu}>{ t('contact') }</Link>
                     </div>
                 }
             </div>

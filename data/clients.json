@@ -3,52 +3,52 @@
         {
             "id":1,
             "name":"Biodent",
-            "image": "/images/clients/biodent.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-dd0845d6ece14.png"
         },
         {
             "id":2,
             "name":"Polymet",
-            "image": "/images/clients/poly.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-13ca9b22f1781.png"
         },
         {
             "id":3,
             "name":"Chiz Cast",
-            "image": "/images/clients/chiz.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-a1bcb71bc25a2.png"
         },
         {
             "id":4,
             "name":"Curvey",
-            "image": "/images/clients/curvey.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-fb1458fee76b3.png"
         },
         {
             "id":5,
             "name":"Wan",
-            "image": "/images/clients/wan.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-ab652cb930ba1.png"
         },
         {
             "id":6,
             "name":"AsiaTech",
-            "image": "/images/clients/asia.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-5ddddf94a92c3.png"
         },
         {
             "id":7,
             "name":"Tim Coffee",
-            "image": "/images/clients/tim.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-ff47c61b89611.png"
         },
         {
             "id":8,
             "name":"Bionji",
-            "image": "/images/clients/bionij.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-4263c7a6fe302.png"
         },
         {
             "id":9,
             "name":"Rad",
-            "image": "/images/clients/rad.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-4e5f8139eb604.png"
         },
         {
             "id":10,
             "name":"Coop",
-            "image": "/images/clients/coop.svg"
+            "image": "https://biaupload.com/do.php?imgf=org-3341b36cbe242.png"
         }
     ]
 }

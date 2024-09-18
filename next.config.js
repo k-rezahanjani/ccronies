@@ -1,38 +1,52 @@
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        remotePatterns: [
-          {
-            protocol: 'https',
-            hostname: 'cdn.sanity.io',
-            port: '',
-          },
-        ],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'biaupload.com',
+        port: '',
       },
-      webpack(config) {
-        const fileLoaderRule = config.module.rules.find((rule) =>
-          rule.test?.test?.('.svg'),
-        )
-    
-        config.module.rules.push(
-          {
-            ...fileLoaderRule,
-            test: /\.svg$/i,
-            resourceQuery: /url/, 
-          },
-          {
-            test: /\.svg$/i,
-            issuer: fileLoaderRule.issuer,
-            resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] },
-            use: ['@svgr/webpack'],
-          },
-        )
-    
-        fileLoaderRule.exclude = /\.svg$/i
-    
-        return config
+    ],
+  },
+  webpack(config) {
+    const fileLoaderRule = config.module.rules.find((rule) =>
+      rule.test?.test?.('.svg'),
+    )
+
+    config.module.rules.push(
+      {
+        ...fileLoaderRule,
+        test: /\.svg$/i,
+        resourceQuery: /url/,
       },
-    
+      {
+        test: /\.svg$/i,
+        issuer: fileLoaderRule.issuer,
+        resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] },
+        use: ['@svgr/webpack'],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'static/fonts/',
+          },
+        },
+      }
+    )
+
+    fileLoaderRule.exclude = /\.svg$/i
+
+    return config
+  },
+
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig);

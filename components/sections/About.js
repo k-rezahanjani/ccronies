@@ -1,22 +1,25 @@
 "use client"
 import { motion } from 'framer-motion'
 import ReadMoreButton from "../ReadMoreButton";
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function About() {
+    const t = useTranslations('Hero')
+    const locale = useLocale()
+    const isRTL = locale === 'fa';
 
     return ( 
-        <div className="min-h-screen flex px-32 lg:px-5 md:px-5 items-center justify-between bg-black lg:flex-col-reverse md:flex-col-reverse sm:flex-col-reverse sm:py-10 -z-20">
-            <div className="relative items-satart w-1/3 lg:w-full md:w-full sm:w-full sm:h-80">
-                <p className="text-[#F99D1C] font-bold text-lg">Welcome to Creative Cronies Studio</p>
-                <p className="text-start text-white text-wrap text-[0.9rem] leading-6 text-ellipsis capitalize md:overflow-hidden md:text-ellipsis h-[16.5rem] ">
-                where boundless creativity and design expertise come together to craft innovative visual solutions.<br/>
-                As a dynamic duo of graphic designers with a passion for artistic collaboration, we pride ourselves on delivering captivating designs that elevate brands and mesmerize audiences.
+        <div className={`min-h-screen flex px-32 lg:px-5 md:px-5 items-center justify-between bg-black ${isRTL ? 'flex-row-reverse' : ''} lg:flex-col-reverse md:flex-col-reverse sm:flex-col-reverse sm:py-10 -z-20`}>
+            <div className={`relative items-start ${isRTL ? 'text-right' : 'text-left'} w-1/3 lg:w-full md:w-full sm:w-full sm:h-80`}>
+                <p className="text-[#F99D1C] font-bold text-lg">{ t('about.welcome') }</p>
+                <p className={`text-white text-wrap text-[0.9rem] leading-6 capitalize md:overflow-hidden h-[16.5rem] ${isRTL ? 'text-right' : 'text-left'}`}>
+                { t('about.desc') }<br/> { t('about.desc2') }
                 </p>
-                <ReadMoreButton title="read more"/>
+                <ReadMoreButton title={t('about.read_more')}/>
             </div>
             <div className="items-end flex">
                 <motion.img 
-                    src="/images/Frame.png" 
+                    src="https://biaupload.com/do.php?imgf=org-ad3cd65e8d981.png" 
                     width={500} 
                     height={500} 
                     alt="frame"
