@@ -1,0 +1,239 @@
+    {
+        "Header": {
+            "about": "درباره ما",
+            "portfolioNav": "نمونه کار",
+            "servicesNav": "خدمات",
+            "contact": "ارتباط با ما"
+        },
+        "Hero": {
+            "hello": "سلام!",
+            "we_are": "ما",
+            "we_are2": "دوستان خلاق هستیم",
+            "scroll": "برو پایین",
+            "about": {
+                "welcome": "به استودیو دوستان خلاق خوش آمدید.",
+                "desc": "اینجا جایی است که خلاقیت بی حد و مرز و تخصص در طراحی باهم ترکیب می شود تا راه حل های بصری نوآورانه خلق کند.",
+                "desc2": "ما به عنوان یک گروه پویا از طراحان گرافیکی که عاشق همکاری هستیم، به ارائه ی طرح های جذاب که باعث ارتقای برندهای و مجذوب کردن مخاطبان می شود افتحار می کنند.",
+                "read_more": "بیشتر درباره ما بدون"
+            },
+            "portfolio": {
+                "title": "نگاهی به نمونه کارهای ما:",
+                "desc": "به دنیای شگفت انگیز خلاقیت ما خوش آمدید، به جایی که رویاهای طراحی به پرواز در می آیند و داستان های بصری جان می گیرند. در نمونه کارهای ما، مجموعه ی متنوعی از پروژه های طراحی را خواهید دید مه نشان دهنده ی اشتیاق ما به خلق تجربیات بصری نوآورانه، مدرن و گیرا است.",
+                "more_works": "نمونه کارهارو ببین"
+            },
+            "digital_marketing": {
+                "title": "خدمات ما:",
+                "desc": "با تمرکز بر زیبایی شناسی مدرن، مینیمالیسم و تکنیک های طراحی پیشرفته، خدمات ما طیف وسیعی از حوزه های طراحی را پوشش می دهد. از حلق لوگوهای نمادین و هویت بصری برند گرفته تا توسعه موشن گرافیک های جذاب و وب سایت های کاربرپسند. ما به ارائه راه حل های طراحی که تاثیری ماندگار برجای می گذارند افتخار می کنیم."
+            },
+            "marketing": [
+                {
+                    "id": 1,
+                    "name": "طراحی هویت بصری",
+                    "image": "https://biaupload.com/do.php?imgf=org-3635a2c2ab5a2.png"
+                },
+                {
+                    "id": 2,
+                    "name": "طراحی لوگو",
+                    "image": "https://biaupload.com/do.php?imgf=org-ddb55b5badb33.png"
+                },
+                {
+                    "id": 3,
+                    "name": "تدوین و طراحی موشن",
+                    "image": "https://biaupload.com/do.php?imgf=org-e72e296e33781.png"
+                },
+                {
+                    "id": 4,
+                    "name": "طراحی سوشال مدیا",
+                    "image": "https://biaupload.com/do.php?imgf=org-4895931f5e784.png"
+                },
+                {
+                    "id": 5,
+                    "name": "طراحی تبلیغات و بازاریابی",
+                    "image": "https://biaupload.com/do.php?imgf=org-f936ac6f8f423.png"
+                },
+                {
+                    "id": 6,
+                    "name": "طراحی وب",
+                    "image": "https://biaupload.com/do.php?imgf=org-349bb304c0c22.png"
+                },
+                {
+                    "id": 7,
+                    "name": "طراحی بسته بندی محصولات",
+                    "image": "https://biaupload.com/do.php?imgf=org-9f29f10386281.png"
+                }
+            ],
+            "client": {
+                "some": "برخی از",
+                "desc": "مشتریانی که برای آنها طراحی کرده ایم"
+            },
+            "project": {
+                "project_title": "دنیال شروع یک پروژه هستید!"
+            },
+            "talk": {
+                "title": "بیایید باهم صحبت کنیم..."
+            },
+            "clients": [
+                {
+                    "id": 1,
+                    "name": "Biodent",
+                    "image": "https://biaupload.com/do.php?imgf=org-dd0845d6ece14.png"
+                },
+                {
+                    "id": 2,
+                    "name": "Polymet",
+                    "image": "https://biaupload.com/do.php?imgf=org-13ca9b22f1781.png"
+                },
+                {
+                    "id": 3,
+                    "name": "Chiz Cast",
+                    "image": "https://biaupload.com/do.php?imgf=org-a1bcb71bc25a2.png"
+                },
+                {
+                    "id": 4,
+                    "name": "Curvey",
+                    "image": "https://biaupload.com/do.php?imgf=org-fb1458fee76b3.png"
+                },
+                {
+                    "id": 5,
+                    "name": "Wan",
+                    "image": "https://biaupload.com/do.php?imgf=org-ab652cb930ba1.png"
+                },
+                {
+                    "id": 6,
+                    "name": "AsiaTech",
+                    "image": "https://biaupload.com/do.php?imgf=org-5ddddf94a92c3.png"
+                },
+                {
+                    "id": 7,
+                    "name": "Tim Coffee",
+                    "image": "https://biaupload.com/do.php?imgf=org-ff47c61b89611.png"
+                },
+                {
+                    "id": 8,
+                    "name": "Bionji",
+                    "image": "https://biaupload.com/do.php?imgf=org-4263c7a6fe302.png"
+                },
+                {
+                    "id": 9,
+                    "name": "Rad",
+                    "image": "https://biaupload.com/do.php?imgf=org-4e5f8139eb604.png"
+                },
+                {
+                    "id": 10,
+                    "name": "Coop",
+                    "image": "https://biaupload.com/do.php?imgf=org-3341b36cbe242.png"
+                }
+            ]
+        },
+        "About_Us": {
+            "title": "ما که هستیم؟",
+            "desc": "ما دوستان حلاق هستیم، با سال ها تجربه در صنعت طراحی. مسیر ما به عنوان دوستان صمیمی و رفقای حلاق آغاز شد. عشق مشترک ما به طراحی مدرن، مینیمال و تخیلی به حاه طلبی ما برای ایجاد پناهگاه طراحی ما دامن زد.",
+            "founders_title1": "با بنیان گذارهای",
+            "founders_title2": "استودیو دوستان حلاق آشنا شوید.",
+            "what_do_we_do": "ما چه کاری انجام میدیم؟",
+            "what_desc": "در استودیو دوستان خلاق، خدمات تخصصی ما طیف گسترده ای حوزه های طراحی در بر می گیرد. از ساختن لوگوهای چشم نواز که هویت برند را تجسم می دهند تا مفهوم سازی گرافیک های متحرک الهام بخش که جانی در داستان گویی بصری شما می بخشد. ما از هر چالش طراحی که برایمان پیش می آید لذت می بریم. فرقی نمی کند هویت های بصری برند ایجاد طرح های رابط کاربری خیره کننده یا ایجاد طرح های وب یکپارچه باشد. ما تلاش می کنیم با هر پروژه ای که انجام می دهیم از انتظارات فراتر برویم.",
+            "founders": [
+                {
+                    "id": 1,
+                    "name": "تارا نباتیان",
+                    "title": "طراح گرافیک ارشد",
+                    "description": "سلام من یک طراح گرافیک خلاق هستم که تخصصم توی طراحی لوگو و برندینگ هست. همچنین فارغ التحصیل کارشناسی از دانشگاه علم و فرهنگ هستم. من مشتاق ساختن هویت های بصری جذابی هستم که جوهره ی برند شما را تسخیر می کند",
+                    "imageURL": "/images/founders/Tara.png"
+                },
+                {
+                    "id": 2,
+                    "name": "صبا ابراهیمی",
+                    "title": "طراح گرافیک ارشد",
+                    "description": "سلام من یک طراح تبلیغات خلاق با سابقه کار توی حوزه ی بازاریابی دیجیتال هستم. من توی دیزاین، موشن گرافیک، برندینگ و چاپ مهارت دارم. همچنین فارغ التحصیل کارشناسی ارشد از دانشگاه علم و فرهنگ هستم.",
+                    "imageURL": "/images/founders/Saba.png"
+                }
+            ]
+        },
+        "Portfolio": {
+            "title": "بیاید نگاهی بندازیم به",
+            "desc": "رزومه و نمونه کارهای دوستان خلاق",
+            "portfolio": [
+                {
+                    "title": "طراحی لوگو",
+                    "description": "ما لوگوهای متمایز به یاد ماندنی ایجاد می کنیم که جوهره و ارزش های برند شما را تجسم می بخشند.",
+                    "images": [
+                        "https://biaupload.com/do.php?imgf=org-a0e9c05b1e531.png",
+                        "https://biaupload.com/do.php?imgf=org-0d420748c9f51.png",
+                        "https://biaupload.com/do.php?imgf=org-58401a6b89832.png",
+                        "https://biaupload.com/do.php?imgf=org-f6c5b91e12d93.png",
+                        "https://biaupload.com/do.php?imgf=org-e4d74f2a144b4.png",
+                        "https://biaupload.com/do.php?imgf=org-f47ab0ac27a21.png",
+                        "https://biaupload.com/do.php?imgf=org-bb9eeaf953162.png",
+                        "https://biaupload.com/do.php?imgf=org-6eea28c8dd6a3.png",
+                        "https://biaupload.com/do.php?imgf=org-5c8bd2baf1c44.png"
+                    ]
+                },
+                {
+                    "title": "طراحی هویت بصری",
+                    "description": "ما هویت های بصری از جمله پالت های رنگی، تایپوگرافی گرافیک و دستورالعمل های برند را توسعه می دهیم تا اطمنینان حاصل شود که برند در سراسر نقاط تماس ثبات دارد.",
+                    "images": [
+                        "https://biaupload.com/do.php?imgf=org-8dd0e0df75511.png",
+                        "https://biaupload.com/do.php?imgf=org-9df860b85c0a1.png",
+                        "https://biaupload.com/do.php?imgf=org-ebab89d693282.png",
+                        "https://biaupload.com/do.php?imgf=org-b2d73b598efd3.png",
+                        "https://biaupload.com/do.php?imgf=org-d3b2680135434.png",
+                        "https://biaupload.com/do.php?imgf=org-e753a5bf1a9a1.png",
+                        "https://biaupload.com/do.php?imgf=org-f2b4e8200c802.png",
+                        "https://biaupload.com/do.php?imgf=org-93dcc239ddbd3.png",
+                        "https://biaupload.com/do.php?imgf=org-d53656bd16d44.png"
+                    ]
+                },
+                {
+                    "title": "طراحی بسته بندی محصولات",
+                    "description": "بسته بندی اغلب اولین نقطه تماس فیزیکی با برند شما است. طراحی قوی تاثیر مقبتی می گذارد و در قفسه های شلوع مورد توجه قرار می گیرد. عناصر طراحی مانند رنگ ها، فونت ها و تصاویر همگی باهم کار میکنند تا شخصیت و ارزش های برند شما را به اشتراک  بگذارند.",
+                    "images": [
+                        "https://biaupload.com/do.php?imgf=org-1064b39d43b31.png",
+                        "https://biaupload.com/do.php?imgf=org-29e0975aedb41.png",
+                        "https://biaupload.com/do.php?imgf=org-52a9becdc4432.png",
+                        "https://biaupload.com/do.php?imgf=org-a0e39d62d63f3.png",
+                        "https://biaupload.com/do.php?imgf=org-d9b0540f25824.png",
+                        "https://biaupload.com/do.php?imgf=org-a1007f05f32f1.png",
+                        "https://biaupload.com/do.php?imgf=org-6a5df8f239f02.png",
+                        "https://biaupload.com/do.php?imgf=org-76dc0ec81b2a3.png",
+                        "https://biaupload.com/do.php?imgf=org-024cd25cb43a4.png",
+                        "https://biaupload.com/do.php?imgf=org-3578cf0e78ed1.png"
+                    ]
+                },
+                {
+                    "title": "طراجی شبکه های اجتماعی",
+                    "description": "ما گرافیک های شبکه های اجتماعی چشم نوازی ایجاد می کنیم که باعث  ایجاد گفتگو  و افزایش تعامل در کانال های شبکه های اجتماعی شما می شوند.",
+                    "images": [
+                        "https://biaupload.com/do.php?imgf=org-7f5a35941ca01.png",
+                        "https://biaupload.com/do.php?imgf=org-29588ff5a0601.png",
+                        "https://biaupload.com/do.php?imgf=org-ee72a6d2e0e52.png",
+                        "https://biaupload.com/do.php?imgf=org-89126dd57a943.png",
+                        "https://biaupload.com/do.php?imgf=org-45def7d4bafe4.png",
+                        "https://biaupload.com/do.php?imgf=org-ea82c4dfff631.png",
+                        "https://biaupload.com/do.php?imgf=org-ca77d5c03d692.png",
+                        "https://biaupload.com/do.php?imgf=org-b5776518ffa43.png",
+                        "https://biaupload.com/do.php?imgf=org-9a90ec44ea774.png"
+                    ]
+                },
+                {
+                    "title": "طراحی وبسایت و اپلیکیشن",
+                    "description": "ما وب سایت های کاربرپسند و بصری خیره کننده طراحی می کنیم که برند شما را با ظرافت نشان می دهد و یک تجره کاربری یکپارچه را تضمین میکند. ما رابط های کاربری بصری جذاب و شهودی ایجاد میکنیم که برای تعامل کاربر بهینه سازی شده اند و باعث می شوند محصولات دیجیتال شما برای استفاده لذت بخش باشند.",
+                    "images": [
+                        "https://biaupload.com/do.php?imgf=org-2b0289510d301.png",
+                        "https://biaupload.com/do.php?imgf=org-8310078d6cfe1.png",
+                        "https://biaupload.com/do.php?imgf=org-fc114c5e014e2.png",
+                        "https://biaupload.com/do.php?imgf=org-cd94503d146f3.png",
+                        "https://biaupload.com/do.php?imgf=org-037b3806f9804.png",
+                        "https://biaupload.com/do.php?imgf=org-1fa2016ccc991.png",
+                        "https://biaupload.com/do.php?imgf=org-912538f3e8cc2.png",
+                        "https://biaupload.com/do.php?imgf=org-075e39e5062f3.png"
+                    ]
+                }
+            ]
+        },
+        "Footer": {
+            "email": "admin@ccronies.com",
+            "tel": "+98-9308888039",
+            "project": "پروژه تو شروع کن",
+            "placeholder": "ایمیلتو بنویس"
+        }
+    }

@@ -1,0 +1,39 @@
+{
+    "marketing": [
+        {
+            "id": 1,
+            "name": "branding design",
+            "image": "https://biaupload.com/do.php?imgf=org-3635a2c2ab5a2.png"
+        },
+        {
+            "id": 2,
+            "name": "logo design",
+            "image": "https://biaupload.com/do.php?imgf=org-ddb55b5badb33.png"
+        },
+        {
+            "id": 3,
+            "name": "video & motion graphic",
+            "image": "https://biaupload.com/do.php?imgf=org-e72e296e33781.png"
+        },
+        {
+            "id": 4,
+            "name": "social media design",
+            "image": "https://biaupload.com/do.php?imgf=org-4895931f5e784.png"
+        },
+        {
+            "id": 5,
+            "name": "advertising and marketing design",
+            "image": "https://biaupload.com/do.php?imgf=org-f936ac6f8f423.png"
+        },
+        {
+            "id": 6,
+            "name": "web design",
+            "image": "https://biaupload.com/do.php?imgf=org-349bb304c0c22.png"
+        },
+        {
+            "id": 7,
+            "name": "packaging design",
+            "image": "https://biaupload.com/do.php?imgf=org-9f29f10386281.png"
+        }
+    ]
+}
