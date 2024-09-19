@@ -19,7 +19,7 @@ export default function Portfolio() {
       </div>
 
       <div className={`flex ${isRTL ? 'mr-auto' : 'ml-auto'} lg:flex-row lg:w-full lg:justify-center sm:flex-col md:flex-col sm:mt-14`}>
-        <div className={`flex justify-end items-center float-right md:flex-col md:mx-auto`}>
+        <div className={`flex ${isRTL ? 'justify-start' : 'justify-end'} items-center float-right md:flex-col md:mx-auto`}>
           <img
             src="https://biaupload.com/do.php?imgf=org-9d589c8004901.png"
             className="w-[66%] rounded-md md:w-full sm:mb-20"
