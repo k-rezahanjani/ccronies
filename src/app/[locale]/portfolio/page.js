@@ -1,4 +1,4 @@
-
+'use client'
 import { Montserrat } from 'next/font/google';
 import PortfolioCard from '@/components/PorfolioCard';
 import { useLocale, useTranslations } from 'next-intl';

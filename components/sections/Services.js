@@ -1,3 +1,4 @@
+'use client'
 import data from '/data/data.json'
 import PackageCard from '../PackageCard';
 

@@ -1,7 +1,7 @@
 import localFont from 'next/font/local';
 import { Montserrat } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 
 import Header from '@/components/layout/header/Header';
 import Footer from '@/components/layout/footer/Footer';
@@ -20,7 +20,8 @@ export const metadata = {
   },
 };
 
-export default async function RootLayout({ children }) {
+export default async function RootLayout({ children, params: {locale} }) {
+  unstable_setRequestLocale('fa')
   const messages = await getMessages();
 
   return (

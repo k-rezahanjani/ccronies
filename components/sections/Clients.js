@@ -1,3 +1,4 @@
+'use client'
 import CardLogo from "../CardLogo";
 import data from "/data/clients.json";
 

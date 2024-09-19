@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import CardLogo from '../CardLogo';
 import { useLocale, useTranslations } from 'next-intl';
