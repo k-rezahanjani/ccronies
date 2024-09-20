@@ -16,7 +16,7 @@ export const metadata = {
   title: 'Creative Cronies',
   description: 'Created by Kaveh R.H',
   icons: {
-    icon: '/favicon.ico',
+    icon: './favicon.ico',
   },
 };
 
