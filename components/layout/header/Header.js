@@ -67,7 +67,7 @@ const Header = () => {
             >
                 <Link href="/" className="cursor-pointer">
                     <Image
-                        src="/images/logo.png"
+                        src="https://biaupload.com/do.php?imgf=org-4b181f4ad02f1.png"
                         className='background-color: black'
                         width={200}
                         height={200}
