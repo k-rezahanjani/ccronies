@@ -16,7 +16,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'postimg.cc',
+        hostname: 's32.picofile.com',
         port: '',
       },
     ],
