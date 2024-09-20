@@ -14,6 +14,11 @@ const nextConfig = {
         hostname: 'biaupload.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'postimg.cc',
+        port: '',
+      },
     ],
   },
   webpack(config) {

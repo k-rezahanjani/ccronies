@@ -138,14 +138,14 @@
                     "name": "تارا نباتیان",
                     "title": "طراح گرافیک ارشد",
                     "description": "سلام من یک طراح گرافیک خلاق هستم که تخصصم توی طراحی لوگو و برندینگ هست. همچنین فارغ التحصیل کارشناسی از دانشگاه علم و فرهنگ هستم. من مشتاق ساختن هویت های بصری جذابی هستم که جوهره ی برند شما را تسخیر می کند",
-                    "imageURL": "/images/founders/Tara.png"
+                    "imageURL": "https://biaupload.com/do.php?imgf=org-a50a73349d1b1.png"
                 },
                 {
                     "id": 2,
                     "name": "صبا ابراهیمی",
                     "title": "طراح گرافیک ارشد",
                     "description": "سلام من یک طراح تبلیغات خلاق با سابقه کار توی حوزه ی بازاریابی دیجیتال هستم. من توی دیزاین، موشن گرافیک، برندینگ و چاپ مهارت دارم. همچنین فارغ التحصیل کارشناسی ارشد از دانشگاه علم و فرهنگ هستم.",
-                    "imageURL": "/images/founders/Saba.png"
+                    "imageURL": "https://biaupload.com/do.php?imgf=org-27c6bc0d0de81.png"
                 }
             ]
         },
@@ -155,9 +155,9 @@
             "portfolio": [
                 {
                     "title": "طراحی لوگو",
-                    "description": "ما لوگوهای متمایز به یاد ماندنی ایجاد می کنیم که جوهره و ارزش های برند شما را تجسم می بخشند.",
+                    "description": "ما لوگوهای متمایز به یاد ماندنی ایجاد می کنیم که جوهره و ارزش های برند شما را تجسم می بخش  ند.",
                     "images": [
-                        "https://biaupload.com/do.php?imgf=org-a0e9c05b1e531.png",
+                        "./images/portfolio/logo.png",
                         "https://biaupload.com/do.php?imgf=org-0d420748c9f51.png",
                         "https://biaupload.com/do.php?imgf=org-58401a6b89832.png",
                         "https://biaupload.com/do.php?imgf=org-f6c5b91e12d93.png",
