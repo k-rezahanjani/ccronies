@@ -40,7 +40,7 @@ const Header = () => {
     };
 
     return (
-        <header className={`bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5 ${isRTL ? '' : mont.className}`}>
+        <header className={`bg-black top-0 pt-7 flex items-start justify-between mx-auto px-32 lg:px-5 md:px-5 ${isRTL ? 'h-[60px]' : mont.className}`}>
             {/* Logo */}
             <motion.div
                 initial={{ x: -500, opacity: 0, scale: 1 }}
