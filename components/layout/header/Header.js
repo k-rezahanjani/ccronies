@@ -50,7 +50,7 @@ const Header = () => {
             >
                 <Link href="/" className="cursor-pointer">
                     <Image
-                        src="/images/logo-resp.png"
+                        src="https://biaupload.com/do.php?imgf=org-da57776cd7791.png"
                         className='background-color: black'
                         width={65}
                         height={65}
@@ -67,7 +67,7 @@ const Header = () => {
             >
                 <Link href="/" className="cursor-pointer">
                     <Image
-                        src="https://biaupload.com/do.php?imgf=org-4b181f4ad02f1.png"
+                        src="https://biaupload.com/do.php?imgf=org-3ce728429edc1.png"
                         className='background-color: black'
                         width={200}
                         height={200}
