@@ -81,7 +81,7 @@ const PortfolioCard = () => {
     const isRTL = locale === 'fa';
     return (
         <section className="flex flex-wrap bg-black text-white py-12 px-6 lg:px-24 sm:px-6">
-            <div className={`flex flex-col ${isRTL ? 'text-right' : 'text-left'}`}>
+            <div className={`flex flex-col`}>
                 {portfolio.map((item, index) => (
                     <div key={index} className={`flex ${index % 2 === 1 ? 'flex-row-reverse' : 'flex-row'} justify-between items-center gap-4 sm:flex-col sm:gap-10`}>
                         <div className="w-1/3 mx-auto sm:w-full">
