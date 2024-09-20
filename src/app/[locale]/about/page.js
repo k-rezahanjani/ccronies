@@ -28,7 +28,7 @@ const Page = () => {
             </p>
           </div>
           <div className={`flex w-1/2 sm:hidden md:hidden ${isRight ? 'justify-start' : 'justify-end'}`}>
-            <Image src="/images/Layer_1.png" alt="Hero Image" width={250} height={250} />
+            <Image src="https://s32.picofile.com/file/8479194942/Layer_1.png" alt="Hero Image" width={250} height={250} />
           </div>
         </div>
       </div>
