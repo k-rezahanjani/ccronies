@@ -16,17 +16,17 @@ const Hero = ({ lang }) => {
   const [isClient, setIsClient] = useState(false);
 
   const t = useTranslations("Hero");
-  const locale = useLocale();
-  const isRTL = locale === 'fa';
+  // const locale = useLocale();
+  // const isRTL = locale === 'fa';
 
   useEffect(() => {
     setIsClient(true);
   }, []);
 
   return (
-    <div className={`min-h-screen bg-black flex justify-between items-center relative ${isRTL ? 'rtl' : 'ltr'} ${lang}`}>
-      <div className={`${isRTL ? 'flex flex-row-reverse text-right w-full justify-between' : 'flex flex-wrap w-full justify-between'}`}>
-        <div className={`w-full sm:ps-8 ${isRTL ? 'ps-0 pe-32' : 'ps-32'}`}>
+    <div className={`min-h-screen bg-black flex justify-between items-center relative ${lang}`}>
+      <div className={`flex flex-wrap w-full justify-between`}>
+        <div className={`w-full sm:ps-8 ps-32 `}>
           <motion.div
             className="flex flex-col w-full"
             initial={{ opacity: 0, scale: 1 }}
@@ -59,11 +59,11 @@ const Hero = ({ lang }) => {
           initial={{ y: 200, scale: 1, opacity: 0 }}
           animate={{ y: 0, scale: 1, opacity: 1 }}
           transition={{ duration: 1.4 }}
-          className={`flex items-center ${isRTL ? 'space-x-reverse' : 'space-x'}-2 w-36 p-1`}
+          className={`flex items-center w-36 p-1`}
         >
           <a href="#about" className="my-auto text-white flex items-center cursor-pointer">
             {t('scroll')}
-            <Image src="https://biaupload.com/do.php?imgf=org-dadcd97e3c0d1.png" width={30} height={30} alt="Arrow Down" className={`mt-2 ${isRTL ? 'me-1' : 'ms-1'}`} />
+            <Image src="https://biaupload.com/do.php?imgf=org-dadcd97e3c0d1.png" width={30} height={30} alt="Arrow Down" className={`mt-2 ms-1`} />
           </a>
         </motion.div>
       </div>

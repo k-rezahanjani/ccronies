@@ -23,7 +23,7 @@ const DigitalMarketing = () => {
 
   return (
     <div className={`min-h-screen flex flex-col items-center justify-center bg-black py-10 px-5 -z-40 ${isRight ? '': mont.className}`}>
-      <div className={`flex flex-wrap justify-center items-start w-full lg:justify-between ${isRight ? 'flex-row-reverse' : ''}`}>
+      <div className={`flex flex-wrap justify-center items-start w-full lg:justify-between`}>
         {/* Text Section */}
         <div className={`max-w-2xl lg:w-1/2 px-10 md:w-full sm:px-0 ${isRight ? 'text-right' : 'text-left'}`}>
           <h2 className="text-3xl text-[#F99D1C] capitalize mb-4">{t('digital_marketing.title')}</h2>

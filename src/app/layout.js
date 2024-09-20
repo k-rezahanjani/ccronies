@@ -21,11 +21,11 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params: {locale} }) {
-  unstable_setRequestLocale('fa')
+  unstable_setRequestLocale("fa")
   const messages = await getMessages();
 
   return (
-    <html lang='fa' className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body className={myFont.className}>
         <NextIntlClientProvider messages={messages}>
           <Header />

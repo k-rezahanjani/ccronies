@@ -1,10 +1,13 @@
+import { useLocale } from 'next-intl';
 import React from 'react';
-import Image from 'next/image';
-import starUrl from '@/public/images/arrowRight.svg?url';
+// import Image from 'next/image';
+// import starUrl from '@/public/images/arrowRight.svg?url';
 
 const ReadMoreButton = ({ title }) => {
+    const locale = useLocale()
+    const isRTL = locale === 'fa';
     return (
-        <div className="flex items-center space-x-2 w-44 p-1">
+        <div className={`flex items-center space-x-2 w-44 p-1  ${isRTL ? 'text-right float-right justify-end' : ''}`}>
             <button className="capitalize text-white">{title}</button>
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" className="flex-shrink-0">
                 <circle cx="9" cy="9" r="9" transform="matrix(1.19249e-08 1 1 -1.19249e-08 3 3)" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
