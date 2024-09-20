@@ -25,7 +25,7 @@ export default async function RootLayout({ children, params: {locale} }) {
   const messages = await getMessages();
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="fa" className="scroll-smooth">
       <body className={myFont.className}>
         <NextIntlClientProvider messages={messages}>
           <Header />
