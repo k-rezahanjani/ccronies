@@ -56,8 +56,8 @@ const DigitalMarketing = () => {
             <Image 
               src={item.image} 
               alt={item.name} 
-              width={item.name === 'social media design' ? 45 : 70}  
-              height={item.name === 'social media design' ? 45 : 70} 
+              width={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 45 : 70}
+              height={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 45 : 70}
             />
             <p className="text-[#C9C9C9] mt-3 capitalize text-center">{item.name}</p>
           </div>

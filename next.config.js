@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   experimental: {
     middleware: true,
+    unstable_setRequestLocale: true,
   },
   images: {
     remotePatterns: [

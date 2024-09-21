@@ -7,6 +7,7 @@ import Header from '@/components/layout/header/Header';
 import Footer from '@/components/layout/footer/Footer';
 
 import './globals.css';
+// import LocaleSwitcher from '@/components/LocaleSwitcher';
 
 const mont = Montserrat({ subsets: ['latin'] });
 

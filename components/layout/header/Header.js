@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Montserrat } from "next/font/google";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const mont = Montserrat({ subsets: ['latin'] });
 
@@ -122,7 +123,7 @@ const Header = () => {
                         { t('contact') }
                     </button>
                 </Link>
-                {/* <RxHamburgerMenu name="menu" className="text-3xl text-orange-400 cursor-pointer" onClick={(e) => onToggle(e.name)}/> */}
+                {/* <LocaleSwitcher /> */}
             </motion.div>
             {/* Menu Items when on tablet and mobile screen */}
             <div className="hidden md:flex">
