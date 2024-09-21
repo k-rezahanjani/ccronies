@@ -19,7 +19,7 @@ export default function About() {
             </div>
             <div className="items-end flex">
                 <motion.img 
-                    src="https://biaupload.com/do.php?imgf=org-ad3cd65e8d981.png" 
+                    src="https://s32.picofile.com/file/8479218692/Frame.png" 
                     width={500} 
                     height={500} 
                     alt="frame"
