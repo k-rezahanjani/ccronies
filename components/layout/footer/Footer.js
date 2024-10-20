@@ -7,6 +7,7 @@ import { FaLinkedinIn, FaInstagram, FaBehance, FaWhatsapp } from "react-icons/fa
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 // import myFont from '../font/Morabba-Regular.woff'
 
 
@@ -35,12 +36,13 @@ const Footer = () => {
       {/* Email Form and Social Links */}
       <div className="flex flex-col items-center md:order-1">
         {/* Start Project */}
-        <button onClick={handleSubmit(onSubmit)} className="flex items-center text-2xl text-[#F99D1C] mb-3 cursor-pointer">
-          <span>{t('project')}</span>
-          <VscSend size={20} className="ml-2" />
+        <button onClick={handleSubmit(onSubmit)} className={`flex items-center text-2xl text-[#F99D1C] mb-3 cursor-pointer ${isRTL ? 'flex-row-reverse' : ''}`}>
+          <span className={`font-bold `}>{t('project')}</span>
+          {/* <VscSend size={20} className="ml-2" style={{rotate: '180deg', marginRight: '6px'}}/> */}
+          <Image src={t('arrow')} width={25} height={25} className="mr-1"/>
         </button>
         <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-xs mb-4">
-          <div className="flex items-center border-b border-[#DBD8D3] py-2">
+          <div className="flex items-center border-b border-[#DBD8D3] py-2" style={isRTL ? {direction: 'rtl'} : {direction: 'ltr'}}>
             <input
               {...register("email", { required: true })}
               type="email"
@@ -48,7 +50,7 @@ const Footer = () => {
               placeholder={t('placeholder')}
             />
             <button type="submit" className="text-[#DBD8D3]">
-              <VscSend size={20} />
+              <VscSend size={20} style={isRTL ? {rotate: '180deg'} : {}}/>
             </button>
           </div>
         </form>
@@ -71,7 +73,7 @@ const Footer = () => {
       {/* Footer Info */}
       <div className={`flex flex-col text-[#DBD8D3] text-sm md:order-3 ${mont.className}`}>
         <p className="capitalize">&copy; Creative Cronies</p>
-        <p className="cursor-pointer">Privacy & Terms</p>
+        <p className="capitalize">Privacy & Terms</p>
       </div>
     </footer>
   );

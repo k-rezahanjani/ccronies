@@ -21,9 +21,9 @@ const Page = () => {
       {/* Hero section */}
       <div className="flex w-full justify-between">
         <div className={`w-full sm:px-8 py-40 flex items-center lg:px-6 md:px-6 md:py-12 bg-black ${isRight ? 'flex-row-reverse pe-8' : 'ps-32'}`}>
-          <div className={`flex flex-col w-1/2 pr-8 md:w-full ${isRight ? 'text-right' : 'text-left'}`}>
+          <div className={`flex flex-col w-1/2 pr-8 md:w-full ${isRight ? 'text-right' : 'text-left'}`} style={isRight ? {direction: 'rtl'} : {}}>
             <h2 className="text-lg text-[#F99D1C] mb-3 font-bold">{ t('title') }</h2>
-            <p className="text-wrap text-white leading-6 md:text-2xl sm:text-base">
+            <p className="text-wrap text-lg text-white leading-6 md:text-2xl sm:text-base">
               { t('desc') }
             </p>
           </div>
@@ -33,7 +33,7 @@ const Page = () => {
         </div>
       </div>
       {/* Text */}
-      <div className="flex flex-col mt-8 px-32 md:px-6 lg:px-6">
+      <div className="flex flex-col mt-8 px-32 md:px-6 lg:px-6" style={isRight ? {direction: 'rtl'} : {}}>
         <p className={`text-white text-4xl font-bold mb-8 ${isRight ? 'text-right' : 'text-left'}`}>
           <span className="text-[#F99D1C]">{ t('founders_title1') }</span>
           <br />
@@ -44,7 +44,7 @@ const Page = () => {
       {/* What do we do */}
       <div className="flex flex-wrap w-full justify-between my-20">
         <div className={`w-full sm:px-8 px-32 flex ${isRight ? 'flex-row-reverse text-right' : 'flex-row text-left'} items-center md:px-6 md:flex-col lg:px-6 sm:flex-col-reverse`}>
-          <div className="flex flex-col w-1/2 pr-8 md:w-full">
+          <div className="flex flex-col w-1/2 pr-8 md:w-full" style={isRight ? {direction: 'rtl'} : {}}>
             <h2 className="text-lg text-[#F99D1C] mb-3 font-bold">{ t('what_do_we_do') }</h2>
             <p className="text-wrap text-white leading-6 md:text-2xl sm:text-base">
               { t('what_desc') }

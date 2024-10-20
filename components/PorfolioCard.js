@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import portfolio from '/data/portfolio.json';
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
+import { IoArrowForwardCircleOutline, IoArrowBackCircleOutline } from "react-icons/io5";
+
 
 const ImageCarousel = ({ images }) => {
     const [hovered, setHovered] = useState(false);
@@ -14,7 +16,7 @@ const ImageCarousel = ({ images }) => {
         setTimeout(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
             setFade(false);
-        }, 1000);
+        }, 300);
     };
 
     const handlePrev = () => {
@@ -22,12 +24,12 @@ const ImageCarousel = ({ images }) => {
         setTimeout(() => {
             setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
             setFade(false);
-        }, 1000); 
+        }, 300);
     };
     return (
         <div
             id="default-carousel"
-            className="relative"
+            className="relative rounded-sm"
             data-carousel="slide"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
@@ -37,36 +39,36 @@ const ImageCarousel = ({ images }) => {
                 alt={`Carousel Image ${currentImage}`}
                 width={500}
                 height={500}
-                className={`transition duration-500 ease-out ${fade ? 'opacity-0' : 'opacity-100'}`}
+                className={`transition duration-500 ease-out rounded-lg ${fade ? 'opacity-0' : 'opacity-100'}`}
             />
             {hovered && (
                 <>
-                    {/* Slider Indicators */}
                     <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
                         {images.map((_, index) => (
-                                <button
-                                    key={index}
-                                    type="button"
-                                    className={`w-3 h-3 rounded-full ${index === currentImage ? 'bg-white' : 'bg-gray-300'}`}
-                                    aria-current={index === currentImage}
-                                    aria-label={`Slide ${index + 1}`}
-                                    data-carousel-slide-to={index}
-                                    onClick={() => setCurrentImage(index)}
-                                ></button>
-                            ))}
+                            <button
+                                key={index}
+                                type="button"
+                                aria-current={index === currentImage}
+                                aria-label={`Slide ${index + 1}`}
+                                data-carousel-slide-to={index}
+                                onClick={() => setCurrentImage(index)}
+                            ></button>
+                        ))}
                     </div>
                     <button onClick={handlePrev} type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
                         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full ">
-                            <Image src="/images/carousel-arrows/left.svg" width={50} height={50}/>
-                            <span class="sr-only">Previous</span>
+                            {/* <Image src="../arrow.svg" width={50} height={50}/> */}
+                            <IoArrowForwardCircleOutline className="text-4xl"/>
+                            <span class="sr-only">Next</span>
                         </span>
                     </button>
                     <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span onClick={handleNext} class="inline-flex items-center justify-center w-10 h-10 rounded-full">
-                        <Image src="/images/carousel-arrows/right.svg" width={50} height={50}/>  
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
+                        <span onClick={handleNext} class="inline-flex items-center justify-center w-10 h-10 rounded-full">
+                            {/* <Image src="/images/carousel-arrows/right.svg" width={50} height={50}/>   */}
+                            <IoArrowBackCircleOutline  className="text-4xl"/>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
                 </>
             )}
         </div>

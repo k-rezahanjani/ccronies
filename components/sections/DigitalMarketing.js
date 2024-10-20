@@ -13,9 +13,8 @@ const DigitalMarketing = () => {
   const market = t.raw('marketing');
 
   const locale = useLocale();
-  const isRight = locale === 'fa'; // Check if the locale is Farsi
+  const isRight = locale === 'fa'; 
 
-  // Ensure marketing is an array, even if market is undefined or null
   const marketing = Array.isArray(market) ? market : [];
 
   const topRowItems = marketing.slice(0, 2);
@@ -56,8 +55,8 @@ const DigitalMarketing = () => {
             <Image 
               src={item.image} 
               alt={item.name} 
-              width={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 45 : 70}
-              height={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 45 : 70}
+              width={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 30 : 70}
+              height={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 30 : 70}
             />
             <p className="text-[#C9C9C9] mt-3 capitalize text-center">{item.name}</p>
           </div>
@@ -68,7 +67,7 @@ const DigitalMarketing = () => {
       <div className="flex flex-col gap-y-10 bg-black my-20 px-5 w-full">
         <div className="text-center mx-auto">
           <h2 className="text-4xl capitalize sm:text-3xl text-white">
-            <span className="text-gray-500">{t('client.some')}</span> {t('client.desc')}
+            <span className={`${isRight ? 'text-[#F99D1C]' : 'text-gray-500'}`}>{t('client.some')}</span> {t('client.desc')}
           </h2>
         </div>
         {/* Logo Section */}
@@ -81,7 +80,7 @@ const DigitalMarketing = () => {
 
       {/* "Let's Talk..." Section */}
       <div className="w-full py-20 px-24 md:px-0 md:py-10">
-        <p className={`text-sm text-[#F99D1C] mb-3 capitalize ${isRight ? 'text-right' : 'text-left'} md:text-center`}>
+        <p className={`text-[#F99D1C] mb-3 capitalize ${isRight ? 'text-right text-xl' : 'text-left text-sm'} md:text-center`}>
           {t('project.project_title')}
         </p>
         <h2 className={`text-7xl font-extrabold text-white leading-tight md:text-6xl sm:text-5xl sm:leading-tight ${isRight ? 'text-right' : 'text-left'} md:text-center`}>

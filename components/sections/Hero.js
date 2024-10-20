@@ -33,8 +33,8 @@ const Hero = ({ lang }) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5 }}
           >
-            <p className="text-lg text-[#F99D1C] mb-3">{t('hello')}</p>
-            <h2 className="text-[4.5rem] text-white leading-[90px] md:text-6xl sm:text-4xl font-bold">
+            <p className="text-[36px] text-[#F99D1C] mb-3">{t('hello')}</p>
+            <h2 className="text-[100px] text-white leading-[90px] md:text-6xl sm:text-4xl font-bold">
               {t('we_are')} <br /> {t('we_are2')}
             </h2>
           </motion.div>
@@ -63,7 +63,7 @@ const Hero = ({ lang }) => {
         >
           <a href="#about" className="my-auto text-white flex items-center cursor-pointer">
             {t('scroll')}
-            <Image src="https://biaupload.com/do.php?imgf=org-dadcd97e3c0d1.png" width={30} height={30} alt="Arrow Down" className={`mt-2 ms-1`} />
+            <Image src="https://s32.picofile.com/file/8479851218/arrowDown.svg.html" width={30} height={30} alt="Arrow Down" className={`mt-2 ms-1`} />
           </a>
         </motion.div>
       </div>

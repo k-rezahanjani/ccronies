@@ -12,8 +12,3 @@ export default function NotFound() {
         </div>
     )
 }
-export const getStaticProps = () => {
-    return {
-      props: {},
-    };
-  };

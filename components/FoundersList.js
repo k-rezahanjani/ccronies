@@ -12,7 +12,7 @@ const FoundersList = () => {
   const isRight = locale === 'fa';
 
   return (
-    <div className={`flex ${isRight ? 'justify-row-reverse text-right' : 'justify-row text-left'} justify-between gap-4 md:flex-col md:items-center`}>
+    <div className={`flex ${isRight ? 'justify-row-reverse text-right flex-row-reverse' : 'justify-row text-left'} justify-between gap-4 md:flex-col md:items-center`}>
       {founders.map((founder) => (
         <Card
           key={founder.id}

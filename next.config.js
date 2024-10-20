@@ -4,10 +4,10 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    middleware: true,
-    unstable_setRequestLocale: true,
-  },
+  // experimental: {
+  //   middleware: true,
+  //   unstable_setRequestLocale: true,
+  // },
   images: {
     remotePatterns: [
       {
