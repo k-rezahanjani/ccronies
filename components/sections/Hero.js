@@ -63,7 +63,7 @@ const Hero = ({ lang }) => {
         >
           <a href="#about" className="my-auto text-white flex items-center cursor-pointer">
             {t('scroll')}
-            <Image src="https://s32.picofile.com/file/8479851218/arrowDown.svg.html" width={30} height={30} alt="Arrow Down" className={`mt-2 ms-1`} />
+            <Image src="https://s32.picofile.com/file/8479921750/arrow_circle_right_dark_1_.png" width={25} height={25} alt="Arrow Down" className={`mt-2 ms-1`} />
           </a>
         </motion.div>
       </div>
