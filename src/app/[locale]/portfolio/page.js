@@ -33,6 +33,8 @@ const Home = () => {
                 </div>
                 <PortfolioCard />
             </main>
+
+
         </div>
     );
 }

@@ -12,6 +12,7 @@
     "@lottiefiles/react-lottie-player": "^3.5.4",
     "@next/font": "^14.2.12",
     "@portabletext/react": "^3.1.0",
+    "@preline/carousel": "^2.5.0",
     "bootstrap": "^5.3.3",
     "embla-carousel-react": "^8.3.0",
     "framer-motion": "^10.16.16",

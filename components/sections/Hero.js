@@ -16,8 +16,6 @@ const Hero = ({ lang }) => {
   const [isClient, setIsClient] = useState(false);
 
   const t = useTranslations("Hero");
-  // const locale = useLocale();
-  // const isRTL = locale === 'fa';
 
   useEffect(() => {
     setIsClient(true);
@@ -34,7 +32,7 @@ const Hero = ({ lang }) => {
             transition={{ duration: 1.5 }}
           >
             <p className="text-[36px] text-[#F99D1C] mb-3">{t('hello')}</p>
-            <h2 className="text-[100px] text-white leading-[90px] md:text-6xl sm:text-4xl font-bold">
+            <h2 className="text-[100px] text-white leading-[90px] md:text-6xl sm:text-4xl font-bold" >
               {t('we_are')} <br /> {t('we_are2')}
             </h2>
           </motion.div>
