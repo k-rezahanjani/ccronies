@@ -16,7 +16,7 @@ const ImageCarousel = ({ images }) => {
         setTimeout(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
             setFadeOut(false);
-        }, 0); 
+        }, 5); 
     };
 
     const handlePrev = () => {
@@ -24,7 +24,7 @@ const ImageCarousel = ({ images }) => {
         setTimeout(() => {
             setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
             setFadeOut(false);
-        }, 0); 
+        }, 5); 
     };
 
     return (
