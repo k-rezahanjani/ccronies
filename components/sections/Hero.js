@@ -61,7 +61,12 @@ const Hero = ({ lang }) => {
         >
           <a href="#about" className="my-auto text-white flex items-center cursor-pointer">
             {t('scroll')}
-            <Image src="https://s32.picofile.com/file/8479921750/arrow_circle_right_dark_1_.png" width={25} height={25} alt="Arrow Down" className={`mt-2 ms-1`} />
+            <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-1">
+              <circle cx="9" cy="9" r="9" transform="matrix(-1 2.38498e-08 2.38498e-08 1 21 3)" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 16L12 8M12 16L16 12M12 16L8 12" stroke="#F99D1C" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            {/* <Image src="https://s32.picofile.com/file/8479921750/arrow_circle_right_dark_1_.png" width={25} height={25} alt="Arrow Down" className={`mt-2 ms-1`} /> */}
           </a>
         </motion.div>
       </div>

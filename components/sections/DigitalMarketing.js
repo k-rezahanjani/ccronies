@@ -13,7 +13,7 @@ const DigitalMarketing = () => {
   const market = t.raw('marketing');
 
   const locale = useLocale();
-  const isRight = locale === 'fa'; 
+  const isRight = locale === 'fa';
 
   const marketing = Array.isArray(market) ? market : [];
 
@@ -21,7 +21,7 @@ const DigitalMarketing = () => {
   const bottomRowItems = marketing.slice(2);
 
   return (
-    <div className={`min-h-screen flex flex-col items-center justify-center bg-black py-10 px-5 -z-40 ${isRight ? '': mont.className}`}>
+    <div className={`min-h-screen flex flex-col items-center justify-center bg-black py-10 px-5 -z-40 ${isRight ? '' : mont.className}`}>
       <div className={`flex flex-wrap justify-center items-start w-full lg:justify-between`}>
         {/* Text Section */}
         <div className={`max-w-2xl lg:w-1/2 px-10 md:w-full sm:px-0 ${isRight ? 'text-right' : 'text-left'}`}>
@@ -35,7 +35,7 @@ const DigitalMarketing = () => {
         <div className="flex justify-center flex-wrap items-center md:w-full mt-0 sm:flex-col-reverse">
           {topRowItems.map((item) => (
             <div
-              className="bg-[#000] w-52 h-52 p-5 m-2 flex flex-col items-center justify-center rounded-lg"
+              className="bg-[#000] w-52 h-52 p-5 m-2 flex flex-col items-center justify-center"
               key={item.id}
             >
               <Image src={item.image} alt={item.name} width={70} height={70} />
@@ -49,16 +49,20 @@ const DigitalMarketing = () => {
       <div className="flex justify-center flex-wrap items-center w-full mt-0">
         {bottomRowItems.map((item) => (
           <div
-            className="bg-[#000] w-52 h-52 p-5 m-2 flex flex-col items-center justify-center rounded-lg"
+            className="bg-[#000] w-52 h-52 p-7 m-2 flex flex-col items-center justify-center"
             key={item.id}
           >
-            <Image 
-              src={item.image} 
-              alt={item.name} 
-              width={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 30 : 70}
-              height={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 30 : 70}
-            />
-            <p className="text-[#C9C9C9] mt-3 capitalize text-center">{item.name}</p>
+            <div>
+              <Image
+                src={item.image}
+                alt={item.name}
+                width={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 30 : 70}
+                height={['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 30 : 70}
+              />
+            </div>
+            <div className={`${['social media design', 'طراحی سوشال مدیا'].includes(item.name) ? 'mt-[20px]' : ''}`}>
+              <p className="text-[#C9C9C9] mt-3 capitalize text-center">{item.name}</p>
+            </div>
           </div>
         ))}
       </div>
