@@ -11,77 +11,65 @@ const ImageCarousel = ({ images }) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [fade, setFade] = useState(false);
 
-    // Function to handle next image
     const handleNext = () => {
-        triggerFade(() => setCurrentImage((prev) => (prev + 1) % images.length));
-    };
-
-    // Function to handle previous image
-    const handlePrev = () => {
-        triggerFade(() => setCurrentImage((prev) => (prev - 1 + images.length) % images.length));
-    };
-
-    // Function to trigger fade transition
-    const triggerFade = (callback) => {
         setFade(true);
         setTimeout(() => {
-            callback();
+            setCurrentImage((prev) => (prev + 1) % images.length);
             setFade(false);
         }, 300);
     };
 
+    const handlePrev = () => {
+        setFade(true);
+        setTimeout(() => {
+            setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+            setFade(false);
+        }, 300);
+    };
     return (
         <div
-            id="carouselExample"
-            className="carousel slide"
+            id="default-carousel"
+            className="relative rounded-sm"
+            data-carousel="slide"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <div className="carousel-inner">
-                <Image
-                    src={images[currentImage]}
-                    width={500}
-                    height={500}
-                    className={`transition duration-500 ease-out rounded-lg ${fade ? 'opacity-0' : 'opacity-100'}`}
-                />
-            </div>
-
-            {/* Carousel controls */}
-            <button
-                className="carousel-control-prev"
-                type="button"
-                onClick={handlePrev}
-                aria-label="Previous"
-            >
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-                className="carousel-control-next"
-                type="button"
-                onClick={handleNext}
-                aria-label="Next"
-            >
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
-
-            {/* Carousel indicators */}
+            <Image
+                src={images[currentImage]}
+                alt={`Carousel Image ${currentImage}`}
+                width={500}
+                height={500}
+                className={`transition duration-500 ease-out rounded-lg ${fade ? 'opacity-0' : 'opacity-100'}`}
+            />
             {hovered && (
-                <div className="carousel-indicators">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            type="button"
-                            data-bs-target="#carouselExample"
-                            data-bs-slide-to={index}
-                            className={index === currentImage ? 'active' : ''}
-                            aria-current={index === currentImage}
-                            aria-label={`Slide ${index + 1}`}
-                            onClick={() => triggerFade(() => setCurrentImage(index))}
-                        ></button>
-                    ))}
-                </div>
+                <>
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                        {images.map((_, index) => (
+                            <button
+                                key={index}
+                                type="button"
+                                aria-current={index === currentImage}
+                                aria-label={`Slide ${index + 1}`}
+                                data-carousel-slide-to={index}
+                                onClick={() => setCurrentImage(index)}
+                            ></button>
+                        ))}
+                    </div>
+                    <button onClick={handlePrev} type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full ">
+                            {/* <Image src="../arrow.svg" width={50} height={50}/> */}
+                            <IoArrowForwardCircleOutline className="text-4xl"/>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span onClick={handleNext} class="inline-flex items-center justify-center w-10 h-10 rounded-full">
+                            {/* <Image src="/images/carousel-arrows/right.svg" width={50} height={50}/>   */}
+                            <IoArrowBackCircleOutline  className="text-4xl"/>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                </>
             )}
         </div>
     );
