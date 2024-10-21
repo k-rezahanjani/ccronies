@@ -16,7 +16,7 @@ const ImageCarousel = ({ images }) => {
         setTimeout(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
             setFadeOut(false);
-        }, 300); 
+        }, 0); 
     };
 
     const handlePrev = () => {
@@ -24,7 +24,7 @@ const ImageCarousel = ({ images }) => {
         setTimeout(() => {
             setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
             setFadeOut(false);
-        }, 300); 
+        }, 0); 
     };
 
     return (
@@ -51,7 +51,6 @@ const ImageCarousel = ({ images }) => {
                                 aria-current={index === currentImage}
                                 aria-label={`Slide ${index + 1}`}
                                 onClick={() => setCurrentImage(index)}
-                                className={`w-3 h-3 rounded-full ${index === currentImage ? 'bg-white' : 'bg-gray-300'}`}
                             />
                         ))}
                     </div>
