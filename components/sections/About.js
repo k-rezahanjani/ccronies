@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import ReadMoreButton from "../ReadMoreButton";
 import { useLocale, useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function About() {
     const t = useTranslations('Hero')
@@ -15,7 +16,9 @@ export default function About() {
                 <p className={`text-white text-wrap text-[0.9rem] leading-6 capitalize md:overflow-hidden h-[10rem] `}>
                     {t('about.desc')} {t('about.desc2')}
                 </p>
-                <ReadMoreButton title={t('about.read_more')} />
+                <Link href="/about">
+                    <ReadMoreButton title={t('about.read_more')} />
+                </Link>
             </div>
             <div className="items-end flex">
                 <motion.img

@@ -2,6 +2,7 @@
 import React from "react";
 import ReadMoreButton from "../ReadMoreButton";
 import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 
 export default function Portfolio() {
   const t = useTranslations('Hero');
@@ -15,7 +16,9 @@ export default function Portfolio() {
         <p className={`text-white text-wrap text-[0.9rem] leading-6 h-[10rem]`}>
           {t('portfolio.desc')}
         </p>
-        <ReadMoreButton title={t('portfolio.more_works')} top="top-[500000rem]" />
+        <Link href="/portfolio">
+          <ReadMoreButton title={t('portfolio.more_works')} top="top-[500000rem]" />
+        </Link>
       </div>
 
       <div className={`flex ${isRTL ? 'mr-auto' : ''} lg:flex-row lg:w-full lg:justify-center sm:flex-col md:flex-col sm:mt-14`}>
