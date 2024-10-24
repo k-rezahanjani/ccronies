@@ -39,8 +39,8 @@ const Footer = () => {
         <button onClick={handleSubmit(onSubmit)} className={`flex items-center text-2xl text-[#F99D1C] mb-3 cursor-pointer ${isRTL ? 'flex-row-reverse' : ''}`}>
           <span className={`font-bold `}>{t('project')}</span>
           <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-1">
-            <ellipse cx="15" cy="15" rx="15" ry="15" transform="matrix(7.54979e-08 -1 -1 -7.54979e-08 35 35)" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M13.3346 20.0013L26.668 20.0013M13.3346 20.0013L20.0013 26.668M13.3346 20.0013L20.0013 13.3346" stroke="#F99D1C" stroke-linecap="round" stroke-linejoin="round" />
+            <ellipse cx="15" cy="15" rx="15" ry="15" transform="matrix(7.54979e-08 -1 -1 -7.54979e-08 35 35)" stroke="white" stroke-linecap="round" strokeLinejoin="round" />
+            <path d="M13.3346 20.0013L26.668 20.0013M13.3346 20.0013L20.0013 26.668M13.3346 20.0013L20.0013 13.3346" stroke="#F99D1C" stroke-linecap="round" strokeLinejoin="round" />
           </svg>
 
           {/* <VscSend size={20} className="ml-2" style={{rotate: '180deg', marginRight: '6px'}}/> */}

@@ -154,7 +154,7 @@ const Header = () => {
                         {t('servicesNav')}
                     </button>
                 </Link>
-                <Link href="#footer">
+                <Link href="/contact">
                     <button
                         onClick={() => handleMenuClick('contact')}
                         className={`capitalize hover:text-[#F99D1C] ${selectedMenu === 'contact' ? 'text-[#F99D1C]' : ''}`}
