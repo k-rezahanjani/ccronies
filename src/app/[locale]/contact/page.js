@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 const Page = () => {
     const { register, handleSubmit } = useForm()
     const onSubmit = (formData) => {
-        window.location.href = `mailto:kaveh.rhanjani@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}
+        window.location.href = `mailto:admin@ccronies.com?body=${formData.firstname} ${formData.lastname}. ${formData.message}
         (${formData.email});`
     }
     const t = useTranslations('About_Us')
