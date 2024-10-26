@@ -31,7 +31,7 @@ const ScrollTop = () => {
       {scrollTop && (
         <>
           <button
-            className="fixed right-20 font-semibold bottom-20 text-white my-auto text-start p-2 flex flex-row justify-center items-center cursor-pointer sm:hidden"
+            className="fixed right-20 font-semibold bottom-28 text-white my-auto text-start p-2 flex flex-row justify-center items-center cursor-pointer sm:hidden"
             onClick={scrollToTop}>
             {t('scroll')}
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 28 30" fill="none" className="mt-2 ms-2">

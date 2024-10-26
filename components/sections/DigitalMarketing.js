@@ -3,6 +3,7 @@ import Image from 'next/image';
 import CardLogo from '../CardLogo';
 import { useLocale, useTranslations } from 'next-intl';
 import { Montserrat } from 'next/font/google';
+import DraggableSlider from '../draggableSlider';
 
 const mont = Montserrat({ subsets: ['latin'] });
 
@@ -76,9 +77,10 @@ const DigitalMarketing = () => {
         </div>
         {/* Logo Section */}
         <div className="flex flex-row items-center gap-x-10 overflow-x-scroll scrollbar-none">
-          {clients.map((item) => (
+          {/* {clients.map((item) => (
             <CardLogo key={item.id} image={item.image} name={item.name} title={item.name} />
-          ))}
+          ))} */}
+          <DraggableSlider logos={clients}/>
         </div>
       </div>
 
